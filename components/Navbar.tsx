@@ -9,13 +9,13 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3 decoration-none">
           <div className="relative w-8 h-8">
             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-              <circle cx="20" cy="20" r="18" stroke="#136A66" strokeWidth="2.5" />
-              <circle cx="20" cy="20" r="14" stroke="#136A66" strokeWidth="2.5" strokeOpacity="0.7" />
-              <circle cx="20" cy="20" r="10" stroke="#136A66" strokeWidth="2.5" strokeOpacity="0.4" />
-              <circle cx="20" cy="20" r="6" stroke="#136A66" strokeWidth="2.5" strokeOpacity="0.2" />
+              <circle cx="20" cy="20" r="18" stroke="#6E00CC" strokeWidth="2.5" />
+              <circle cx="20" cy="20" r="14" stroke="#6E00CC" strokeWidth="2.5" strokeOpacity="0.7" />
+              <circle cx="20" cy="20" r="10" stroke="#6E00CC" strokeWidth="2.5" strokeOpacity="0.4" />
+              <circle cx="20" cy="20" r="6" stroke="#6E00CC" strokeWidth="2.5" strokeOpacity="0.2" />
             </svg>
           </div>
-          <span className="text-2xl font-bold text-[#1A1A1A]">Fluxen</span>
+          <span className="text-2xl font-bold text-[#1A1A1A]">SFCollab</span>
         </Link>
 
         {/* Navigation Links */}

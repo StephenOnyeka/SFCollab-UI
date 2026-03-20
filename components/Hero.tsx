@@ -9,7 +9,6 @@ export default function Hero() {
         <div className="flex flex-col items-start gap-8">
           {/* Review Badge */}
           <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-gray-100">
-            {/* <span className="text-sm font-medium text-black uppercase">1,500+ Reviews</span> */}
             <span className="text-sm font-medium uppercase">
               1,500+ Reviews
             </span>
@@ -34,19 +33,12 @@ export default function Hero() {
           </div>
 
           {/* Heading */}
-          {/* <h1 className="text-[44px] sm:text-[56px] lg:text-[72px] font-medium text-[#1A1A1A] leading-[1.05] tracking-tight">
-            We help ambitious brands grow faster
-          </h1> */}
-          {/* <h1 className="text-[44px] sm:text-[56px] lg:text-[68px] font-inter text-[#1A1A1A] leading-tight tracking-tighter"> */}
           <h1 className="text-[44px] sm:text-[56px] lg:text-[60px] font-inter text-[#1A1A1A] leading-tight tracking-tighter">
             We help ambitious brands grow faster
           </h1>
 
           {/* Description */}
           <p className="text-sm text-gray-600 max-w-lg">
-            {/* Data-driven digital marketing that blends creativity with strategy
-            helping you attract, engage, and convert customers across every
-            channel. */}
             Collaboration without friction The real-time canvas where distributed teams build, think, and create in sync.
           </p>
 
@@ -57,17 +49,17 @@ export default function Hero() {
           </div>
 
           {/* Feature Pillars */}
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-4 mt-2">
-            <div className="flex items-center gap-2 text-[15px] font-medium text-[#1A1A1A]/70 uppercase tracking-tight">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#136A66]"></div>
-              Pay per report
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-0 mt-2">
+            <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
+              <div className="w-3 h-3 rounded-full bg-[#6E00CC]"></div>
+              Pay per growth
             </div>
-            <div className="flex items-center gap-2 text-[15px] font-medium text-[#1A1A1A]/70 uppercase tracking-tight">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#136A66]"></div>
-              Insurance-ready
+            <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
+              <div className="w-3 h-3 rounded-full bg-[#6E00CC]"></div>
+              System-ready
             </div>
-            <div className="flex items-center gap-2 text-[15px] font-medium text-[#1A1A1A]/70 uppercase tracking-tight">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#136A66]"></div>
+            <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
+              <div className="w-3 h-3 rounded-full bg-[#6E00CC]"></div>
               Start Free
             </div>
           </div>
@@ -75,7 +67,6 @@ export default function Hero() {
 
         {/* Right Column - Image & Overlays */}
         <div className="relative">
-          {/* <div className="relative aspect-[16/17] w-full rounded-[2.5rem] overflow-hidden shadow-2xl"> */}
           <div className="relative aspect-[16/14] w-full rounded-[2.5rem] overflow-hidden shadow-2xl">
             <Image
               src="/hero-image.png"
@@ -88,7 +79,7 @@ export default function Hero() {
             {/* Play Button Overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
               <button className="bg-white/95 backdrop-blur-md px-6 py-3.5 rounded-2xl flex items-center gap-4 text-black shadow-2xl transition-all transform hover:scale-110 active:scale-95 group">
-                <div className="w-11 h-11 bg-[#1A1A1A] rounded-xl flex items-center justify-center shadow-inner group-hover:bg-[#136A66] transition-colors">
+                <div className="w-11 h-11 bg-[#1A1A1A] rounded-xl flex items-center justify-center shadow-inner group-hover:bg-[#6E00CC] transition-colors">
                   <svg
                     width="20"
                     height="20"

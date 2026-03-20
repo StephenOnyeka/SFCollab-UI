@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Fluxen - Ambitious Brands Grow Faster",
+  title: "SFCollab - Ambitious Brands Grow Faster",
   description: "Data-driven digital marketing that blends creativity with strategy.",
 };
 
