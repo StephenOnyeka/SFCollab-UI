@@ -3,13 +3,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MdOutlineNavigateNext, MdOutlineBolt, MdVerifiedUser, MdAutoAwesome } from 'react-icons/md';
+import Button from './Button';
 
 export default function FinalCTA() {
   return (
-    <section className="w-full bg-white py-24 lg:py-40 relative overflow-hidden">
+    <section className="w-full bg-white py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="relative bg-[#1A1A1A] rounded-[4rem] p-8 md:p-24 overflow-hidden text-center flex flex-col items-center gap-12 group">
+        <div className="relative bg-[#1A1A1A] rounded-[4rem] p-8 md:p-16 overflow-hidden text-center flex flex-col items-center gap-12">
           
           {/* Animated Background effects */}
           <div className="absolute inset-0 opacity-20 pointer-events-none">
@@ -24,47 +25,28 @@ export default function FinalCTA() {
           </div>
 
           <div className="relative z-10 flex flex-col items-center gap-6 max-w-3xl">
-            <motion.div 
+            {/* <motion.div 
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 className="w-16 h-16 rounded-3xl bg-[#6E00CC] flex items-center justify-center text-3xl text-white shadow-[0_0_30px_#6E00CC] mb-4"
             >
                 <MdOutlineBolt />
-            </motion.div>
+            </motion.div> */}
             
-            <h2 className="text-[48px] md:text-[80px] font-normal leading-tight tracking-[calc(-0.04em)] text-white">
-                Start <span className="italic text-[#6E00CC]">building.</span>
+            <h2 className="text-[48px] md:text-[60px] font-normal leading-tight tracking-[calc(-0.04em)] text-white">
+                Start <span className="text-[#6E00CC]">building.</span>
             </h2>
             
-            <p className="text-xl text-gray-400 leading-relaxed">
+            <p className="text-base text-gray-400 leading-relaxed">
                 Join the ecosystem where visions become startups, and execution builds reputation. Your next venture starts here.
             </p>
           </div>
 
           <div className="relative z-10 flex flex-col sm:flex-row items-center gap-4 w-full max-w-3xl justify-center">
-            <motion.button 
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full sm:w-auto bg-[#6E00CC] text-white px-8 py-5 rounded-2xl text-base font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-[#7E11DD] transition-all shadow-[0_10px_40px_-10px_#6E00CC]"
-            >
-                Create a Vision
-                <MdOutlineNavigateNext className="text-2xl" />
-            </motion.button>
-            <motion.button 
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full sm:w-auto bg-white/5 border border-white/10 text-white px-8 py-5 rounded-2xl text-base font-bold uppercase tracking-widest hover:bg-white/10 transition-all"
-            >
-                Join a Startup
-            </motion.button>
-            <motion.button 
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full sm:w-auto bg-white/5 border border-white/10 text-white px-8 py-5 rounded-2xl text-base font-bold uppercase tracking-widest hover:bg-white/10 transition-all"
-            >
-                Build Reputation
-            </motion.button>
+            <Button variant="primary">Create a Vision</Button>
+            <Button variant="outline">Join a Startup</Button>
+            {/* <Button variant="outline">Build Reputation</Button> */}
           </div>
 
           {/* Trust badges footer */}

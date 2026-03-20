@@ -42,7 +42,8 @@ export default function Problem() {
             <h2 className="text-[40px] md:text-[56px] font-normal text-white leading-[1.1] tracking-tighter">
               The process of starting is fundamentally <span className="text-white/40 italic">broken.</span>
             </h2>
-            <p className="text-lg text-white/50 max-w-md leading-relaxed">
+            {/* <p className="text-lg text-white/50 max-w-md leading-relaxed"> */}
+            <p className="text-sm text-white/50 max-w-md leading-relaxed">
               We've identified a critical gap in the venture lifecycle: <strong>Capital & Talent Inefficiency.</strong> Currently, starting a project depends more on luck than on skill alignment.
             </p>
             
@@ -132,7 +133,7 @@ export default function Problem() {
                     <h3 className="text-2xl font-normal text-white tracking-tight group-hover:text-[#6E00CC] transition-colors">
                       {problem.title}
                     </h3>
-                    <p className="text-white/50 leading-relaxed font-normal">
+                    <p className="text-white/50 text-sm leading-relaxed font-normal">
                       {problem.description}
                     </p>
                   </div>

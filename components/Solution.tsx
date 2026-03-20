@@ -85,7 +85,8 @@ export default function Solution() {
                       <h3 className="text-3xl md:text-4xl font-normal leading-tight tracking-tight">
                           Ready to launch your vision in record time?
                       </h3>
-                      <p className="text-white/60 text-[17px]">
+                      {/* <p className="text-white/60 text-[17px]"> */}
+                      <p className="text-white/60 text-base">
                           Join the builders who are bypassing traditional friction to focus on what matters: the product.
                       </p>
                       <div className="flex flex-wrap gap-4 mt-2">
