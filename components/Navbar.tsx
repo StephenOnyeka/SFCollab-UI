@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Button from '@/components/Button';
 
 export default function Navbar() {
   return (
@@ -32,9 +33,9 @@ export default function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <button className="bg-black text-white px-7 py-3 rounded-full text-[15px] font-semibold hover:bg-[#222] transition-all transform hover:scale-105 active:scale-95">
-          Book a demo
-        </button>
+        <Button variant="dark" className="px-7 py-3 text-[15px] font-semibold">
+          Get Started
+        </Button>
       </div>
     </nav>
   );
