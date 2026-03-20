@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/Button";
+import { MdPlayArrow, MdFiberManualRecord } from "react-icons/md";
 
 export default function Hero() {
   return (
@@ -51,15 +52,15 @@ export default function Hero() {
           {/* Feature Pillars */}
           <div className="flex flex-wrap items-center gap-x-4 gap-y-0 mt-2">
             <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
-              <div className="w-3 h-3 rounded-full bg-[#6E00CC]"></div>
+              <MdFiberManualRecord className="w-3 h-3 text-[#6E00CC]" />
               Pay per growth
             </div>
             <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
-              <div className="w-3 h-3 rounded-full bg-[#6E00CC]"></div>
+              <MdFiberManualRecord className="w-3 h-3 text-[#6E00CC]" />
               System-ready
             </div>
             <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
-              <div className="w-3 h-3 rounded-full bg-[#6E00CC]"></div>
+              <MdFiberManualRecord className="w-3 h-3 text-[#6E00CC]" />
               Start Free
             </div>
           </div>
@@ -80,15 +81,7 @@ export default function Hero() {
             <div className="absolute inset-0 flex items-center justify-center">
               <button className="bg-white/95 backdrop-blur-md px-6 py-3.5 rounded-2xl flex items-center gap-4 text-black shadow-2xl transition-all transform hover:scale-110 active:scale-95 group">
                 <div className="w-11 h-11 bg-[#1A1A1A] rounded-xl flex items-center justify-center shadow-inner group-hover:bg-[#6E00CC] transition-colors">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="white"
-                    className="ml-1"
-                  >
-                    <path d="M5 3L19 12L5 21V3Z" />
-                  </svg>
+                  <MdPlayArrow className="text-white text-2xl ml-0.5" />
                 </div>
                 <span className="text-[17px] font-medium tracking-tight text-[#1A1A1A]">
                   Watch Video
