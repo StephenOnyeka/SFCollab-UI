@@ -2,6 +2,9 @@ import React from "react";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
+import BuilderReputation from "@/components/BuilderReputation";
+import EarlyTraction from "@/components/EarlyTraction";
+import FinalCTA from "@/components/FinalCTA";
 
 export default function Home() {
   return (
@@ -9,7 +12,9 @@ export default function Home() {
       <Hero />
       <Problem />
       <Solution />
-      {/* Additional sections can be added here */}
+      <BuilderReputation />
+      <EarlyTraction />
+      <FinalCTA />
     </div>
   );
 }

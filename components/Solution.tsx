@@ -4,6 +4,7 @@ import React from 'react';
 import { MdOutlineBolt, MdOutlineGroups, MdOutlineMap, MdOutlineAutoAwesome } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import Button from './Button';
+import Image from 'next/image';
 
 export default function Solution() {
   const solutions = [
@@ -76,8 +77,9 @@ export default function Solution() {
           </div>
   
           {/* Feature Highlight / CTA Block */}
-          <div className="mt-20 lg:mt-32 relative group">
-              <div className="absolute inset-0 bg-[#6E00CC] rounded-[3rem] blur-3xl opacity-5 group-hover:opacity-10 transition-opacity"></div>
+          {/* <div className="mt-20 lg:mt-32 relative group"> */}
+          <div className="mt-20 lg:mt-32 relative">
+              <div className="absolute inset-0 bg-[#6E00CC] rounded-[3rem] blur-3xl opacity-5 hover:opacity-10 transition-opacity"></div>
               <div className="relative bg-[#1A1A1A] text-white rounded-[4rem] overflow-hidden flex flex-col md:flex-row items-center justify-between p-8 md:p-16 gap-12">
                   <div className="flex flex-col gap-6 max-w-lg">
                       <h3 className="text-3xl md:text-4xl font-normal leading-tight tracking-tight">
@@ -106,62 +108,79 @@ export default function Solution() {
                               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-[#6E00CC]/30 rounded-full blur-2xl"
                           />
   
-                          {/* Floating Nodes (Builders) */}
-                          {[
-                            { x: -80, y: -60, delay: 0 },
-                            { x: 90, y: -40, delay: 1 },
-                            { x: -60, y: 80, delay: 2 },
-                            { x: 70, y: 60, delay: 0.5 },
-                            { x: 0, y: -100, delay: 1.5 }
-                          ].map((pos, i) => (
-                            <motion.div
-                              key={i}
-                              initial={{ x: pos.x, y: pos.y }}
-                              animate={{ 
-                                  x: [pos.x, pos.x + (i % 2 === 0 ? 15 : -15), pos.x],
-                                  y: [pos.y, pos.y + (i % 2 === 0 ? -15 : 15), pos.y]
-                              }}
-                              transition={{ duration: 5 + i, repeat: Infinity, ease: "linear" }}
-                              className="absolute top-1/2 left-1/2 w-10 h-10 -translate-x-1/2 -translate-y-1/2 bg-white/5 border border-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm"
-                            >
-                               <div className="w-6 h-6 rounded-full bg-linear-to-r from-[#6E00CC] to-[#A855F7] opacity-60" />
-                            </motion.div>
-                          ))}
+                        {/* Floating Nodes (Builders) */}
+                        {[
+                          { x: -80, y: -60, delay: 0, img: "https://i.pravatar.cc/100?u=1" },
+                          { x: 90, y: -40, delay: 1, img: "https://i.pravatar.cc/100?u=2" },
+                          { x: -60, y: 80, delay: 2, img: "https://i.pravatar.cc/100?u=3" },
+                          { x: 70, y: 60, delay: 0.5, img: "https://i.pravatar.cc/100?u=4" },
+                          { x: 0, y: -100, delay: 1.5, img: "https://i.pravatar.cc/100?u=5" }
+                        ].map((pos, i) => (
+                          <motion.div
+                            key={i}
+                            initial={{ x: pos.x, y: pos.y }}
+                            animate={{ 
+                                x: [pos.x, pos.x + (i % 2 === 0 ? 15 : -15), pos.x],
+                                y: [pos.y, pos.y + (i % 2 === 0 ? -15 : 15), pos.y]
+                            }}
+                            transition={{ duration: 5 + i, repeat: Infinity, ease: "linear" }}
+                            className="absolute top-1/2 left-1/2 w-10 h-10 -translate-x-1/2 -translate-y-1/2 border-2 border-[#6E00CC]/30 rounded-full overflow-hidden shadow-lg backdrop-blur-sm"
+                          >
+                             <Image 
+                                src={pos.img} 
+                                alt={`Team member ${i + 1}`} 
+                                width={48} 
+                                height={48} 
+                                className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                             />
+                          </motion.div>
+                        ))}
 
                         {/* Dynamic Beaming Lines (Connections) */}
-                        <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20">
-                            <motion.line 
-                                x1="50%" y1="50%" x2="20%" y2="30%" 
-                                stroke="#6E00CC" strokeWidth="1" 
-                                animate={{ opacity: [0, 1, 0], x2: ["20%", "25%", "20%"] }}
-                                transition={{ duration: 3, repeat: Infinity }}
-                            />
-                            <motion.line 
-                                x1="50%" y1="50%" x2="80%" y2="40%" 
-                                stroke="#6E00CC" strokeWidth="1" 
-                                animate={{ opacity: [0, 1, 0], x2: ["80%", "75%", "80%"] }}
-                                transition={{ duration: 4, repeat: Infinity, delay: 1 }}
-                            />
-                            <motion.line 
-                                x1="50%" y1="50%" x2="30%" y2="80%" 
-                                stroke="#6E00CC" strokeWidth="1" 
-                                animate={{ opacity: [0, 1, 0], y2: ["80%", "75%", "80%"] }}
-                                transition={{ duration: 5, repeat: Infinity, delay: 0.5 }}
-                            />
+                        <svg className="absolute inset-0 w-full h-full pointer-events-none">
+                            {[
+                                { x1: "50%", y1: "50%", x2: "20%", y2: "30%", dur: 3 },
+                                { x1: "50%", y1: "50%", x2: "80%", y2: "40%", dur: 4 },
+                                { x1: "50%", y1: "50%", x2: "30%", y2: "80%", dur: 5 },
+                                { x1: "50%", y1: "50%", x2: "70%", y2: "70%", dur: 3.5 }
+                            ].map((line, i) => (
+                                <motion.line 
+                                    key={i}
+                                    x1={line.x1} y1={line.y1} x2={line.x2} y2={line.y2} 
+                                    stroke="url(#lineGradient)" 
+                                    strokeWidth="1.5" 
+                                    strokeDasharray="10 100"
+                                    animate={{ 
+                                        strokeDashoffset: [0, -200],
+                                        opacity: [0.3, 0.6, 0.3]
+                                    }}
+                                    transition={{ duration: line.dur, repeat: Infinity, ease: "linear" }}
+                                />
+                            ))}
+                            <defs>
+                                <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stopColor="#6E00CC" stopOpacity="0" />
+                                    <stop offset="50%" stopColor="#6E00CC" stopOpacity="1" />
+                                    <stop offset="100%" stopColor="#6E00CC" stopOpacity="0" />
+                                </linearGradient>
+                            </defs>
                         </svg>
                     </div>
 
                     <div className="relative z-10 flex flex-col items-center gap-4">
                         <div className="w-16 h-16 rounded-2xl bg-[#6E00CC] shadow-[0_0_30px_#6E00CC] flex items-center justify-center">
-                            <MdOutlineAutoAwesome className="w-8 h-8 text-white" />
+                            {/* <MdOutlineAutoAwesome className="w-8 h-8 text-white" /> */}
+                            <div className='w-10 h-10 bg-white rounded-full'>
+                              <Image alt='logo' src={'/logo.svg'} width={50} height={50}/>
+                            </div>
                         </div>
-                        <motion.p 
+                        {/* <motion.p 
                           animate={{ opacity: [0.4, 0.8, 0.4] }}
                           transition={{ duration: 3, repeat: Infinity }}
                           className="text-sm text-center text-white/60 uppercase tracking-[0.3em] font-medium"
                         >
                           Network Sync
-                        </motion.p>
+                        </motion.p> */}
                     </div>
                 </div>
             </div>

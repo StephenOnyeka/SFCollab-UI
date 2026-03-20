@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import { MdOutlineNavigateNext } from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 export default function Problem() {
   const problems = [
@@ -26,7 +29,13 @@ export default function Problem() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           
           {/* Left Column: Heading & Context */}
-          <div className="flex flex-col gap-6 sticky top-32">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="flex flex-col gap-6 sticky top-32"
+          >
             <span className="text-[#6E00CC] font-normal tracking-[0.2em] uppercase text-sm">
               The Reality
             </span>
@@ -37,22 +46,82 @@ export default function Problem() {
               We've identified a critical gap in the venture lifecycle: <strong>Capital & Talent Inefficiency.</strong> Currently, starting a project depends more on luck than on skill alignment.
             </p>
             
-            {/* Visual element: A "Broken" Diagram / Abstract line */}
+            {/* Visual element: A "Broken" Diagram - INFINITE ANIMATION */}
             <div className="mt-8 relative h-40 w-full overflow-hidden rounded-3xl bg-linear-to-br from-white/5 to-transparent border border-white/10 p-8">
-                <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-[#6E00CC]/10 blur-[100px] rounded-full"></div>
-                <div className="flex items-center gap-4 h-full">
-                    <div className="w-1/3 h-1 bg-white/20 rounded-full"></div>
-                    <div className="w-4 h-4 rounded-full bg-[#6E00CC] shadow-[0_0_20px_#6E00CC]"></div>
-                    <div className="w-1/3 h-1 bg-white/10 rounded-full border-dashed border"></div>
+                {/* Background Glow */}
+                <motion.div 
+                    animate={{ 
+                        opacity: [0.1, 0.2, 0.1],
+                        scale: [1, 1.2, 1]
+                    }}
+                    transition={{ duration: 4, repeat: Infinity }}
+                    className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-[#6E00CC]/20 blur-[100px] rounded-full"
+                ></motion.div>
+
+                <div className="relative flex items-center justify-between gap-4 h-full">
+                    {/* Left: Solid but unstable line */}
+                    <div className="flex-1 h-1 bg-white/10 rounded-full overflow-hidden relative">
+                        <motion.div 
+                            animate={{ 
+                                x: ["-100%", "100%"],
+                                opacity: [0.3, 0.6, 0.3]
+                            }}
+                            transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                            className="absolute inset-0 w-1/2 bg-linear-to-r from-transparent via-[#6E00CC]/40 to-transparent"
+                        />
+                    </div>
+
+                    {/* Center: The "Broken" Node */}
+                    <div className="relative flex items-center justify-center">
+                        <motion.div 
+                            animate={{ 
+                                scale: [1, 1.3, 1],
+                                opacity: [0.5, 1, 0.5]
+                            }}
+                            transition={{ duration: 2, repeat: Infinity }}
+                            className="absolute w-8 h-8 bg-[#6E00CC]/20 rounded-full blur-md"
+                        />
+                        <motion.div 
+                            animate={{ 
+                                scale: [1, 1.1, 1],
+                                rotate: [0, 90, 180, 270, 360],
+                                filter: ["blur(0px)", "blur(1px)", "blur(0px)"]
+                            }}
+                            transition={{ 
+                                scale: { duration: 2, repeat: Infinity },
+                                rotate: { duration: 10, repeat: Infinity, ease: "linear" },
+                                filter: { duration: 0.5, repeat: Infinity, repeatType: "reverse" }
+                            }}
+                            className="w-5 h-5 rounded-sm bg-[#6E00CC] shadow-[0_0_20px_#6E00CC] flex items-center justify-center transform rotate-45"
+                        >
+                            <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
+                        </motion.div>
+                    </div>
+
+                    {/* Right: Leaking / Broken connection */}
+                    <div className="flex-1 h-1 bg-white/5 rounded-full overflow-hidden relative">
+                        <motion.div 
+                            animate={{ 
+                                x: ["100%", "-100%"],
+                                opacity: [0.2, 0.4, 0.2]
+                            }}
+                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                            className="absolute inset-0 w-full bg-[repeating-linear-gradient(90deg,transparent,transparent_10px,#6E00CC_10px,#6E00CC_20px)]"
+                        />
+                    </div>
                 </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column: Problem Cards */}
           <div className="flex flex-col gap-6 md:gap-8">
-            {problems.map((problem) => (
-              <div 
+            {problems.map((problem, index) => (
+              <motion.div 
                 key={problem.id} 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="group relative bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 p-8 rounded-[2.5rem] transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="flex items-start gap-6">
@@ -73,11 +142,17 @@ export default function Problem() {
                 <div className="absolute top-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity">
                     <MdOutlineNavigateNext className="w-6 h-6 text-[#6E00CC] transform -rotate-45" />
                 </div>
-              </div>
+              </motion.div>
             ))}
 
             {/* Problem Footer / Momentum CTA */}
-            <div className="mt-8 p-10 rounded-[3rem] bg-linear-to-br from-[#6E00CC] to-[#450080] shadow-2xl relative overflow-hidden group">
+            <motion.div 
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="mt-8 p-10 rounded-[3rem] bg-linear-to-br from-[#6E00CC] to-[#450080] shadow-2xl relative overflow-hidden group"
+            >
                 {/* Background Pattern */}
                 <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_2px_2px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[length:24px_24px]"></div>
                 
@@ -85,9 +160,13 @@ export default function Problem() {
                     <p className="text-white/90 font-normal text-xl tracking-tight leading-snug">
                        "SFCollab is the antidote to friction. We replace luck with architecture."
                     </p>
-                    <div className="h-[2px] w-12 bg-white/30 rounded-full group-hover:w-24 transition-all duration-500"></div>
+                    <motion.div 
+                        initial={{ width: "3rem" }}
+                        whileHover={{ width: "6rem" }}
+                        className="h-[2px] bg-white/30 rounded-full"
+                    ></motion.div>
                 </div>
-            </div>
+            </motion.div>
           </div>
 
         </div>
