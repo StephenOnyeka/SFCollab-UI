@@ -56,7 +56,8 @@ export default function FinalCTA() {
                     <MdVerifiedUser />
                 </div>
                 <div className="flex flex-col">
-                    <span className="text-white text-sm font-medium">Build your reputation.</span>
+                    {/* <span className="text-white text-sm font-medium">Build your reputation.</span> */}
+                    <span className="text-white text-sm">Build your reputation.</span>
                     <span className="text-gray-500 text-xs">Verify your work with peer-reviewed data.</span>
                 </div>
              </div>
@@ -65,7 +66,8 @@ export default function FinalCTA() {
                     <MdAutoAwesome />
                 </div>
                 <div className="flex flex-col">
-                    <span className="text-white text-sm font-medium">Powered by SF Engine.</span>
+                    {/* <span className="text-white text-sm font-medium">Powered by SF Engine.</span> */}
+                    <span className="text-white text-sm">Powered by SF Engine.</span>
                     <span className="text-gray-500 text-xs">Access proprietary tools for venture formation.</span>
                 </div>
              </div>

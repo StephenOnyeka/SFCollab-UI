@@ -46,7 +46,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center gap-4">
             <Button variant="primary">Get Started</Button>
-            <Button variant="outline">Join waitlist</Button>
+            <Button variant="outline" className="border border-black" >Join waitlist</Button>
           </div>
 
           {/* Feature Pillars */}

@@ -34,10 +34,10 @@ export default function EarlyTraction() {
           
           {/* Text Content */}
           <div className="flex flex-col gap-8">
-            <div className="flex items-center gap-3 text-[#6E00CC] font-bold text-xs uppercase tracking-[0.3em]">
+            {/* <div className="flex items-center gap-3 text-[#6E00CC] font-bold text-xs uppercase tracking-[0.3em]">
                 <MdTrendingUp className="text-xl" />
                 Early Momentum
-            </div>
+            </div> */}
             <h2 className="text-[42px] md:text-[56px] font-normal leading-[1.1] tracking-tighter text-[#1A1A1A]">
                 The ecosystem is <br /> <span className="text-gray-400 italic">already forming.</span>
             </h2>
