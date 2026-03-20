@@ -15,7 +15,6 @@ export default function Button({ variant = 'secondary', children, className = ''
         {...props}
       >
         {children}
-        {/* <div className="flex items-center right-4"> */}
         <span className="relative flex h-9 w-9 shrink-0 items-center justify-center bg-white rounded-full text-[#6E00CC] group-hover:text-[#0E524F] transition-colors duration-260">
           <MdArrowOutward 
             className="absolute w-6 h-6 transition-transform duration-260 ease-in-out group-hover:translate-x-[200%] group-hover:-translate-y-[200%] text-black" 
@@ -24,7 +23,6 @@ export default function Button({ variant = 'secondary', children, className = ''
             className="absolute w-6 h-6 translate-x-[-200%] translate-y-[200%] transition-transform duration-260 ease-in-out delay-100 group-hover:translate-x-0 group-hover:translate-y-0 text-black" 
           />
         </span>
-        {/* </div> */}
       </button>
     );
   }

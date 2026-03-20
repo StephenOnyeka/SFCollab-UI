@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaDribbble, FaInstagram, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Button from "./Button";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -41,24 +42,16 @@ const Footer = () => {
           
           {/* CTA Section */}
           <div className="lg:col-span-6 flex flex-col items-start">
-            <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-8 max-w-md">
+            <h2 className="text-3xl md:text-4xl leading-tight mb-8 max-w-sm">
               Let's Build Your Growth Today
             </h2>
-            <Link 
-              href="/contact"
-              className="group flex items-center gap-3 bg-[#007b7f] hover:bg-[#008c91] transition-all duration-300 rounded-full pl-8 pr-2 py-2 text-lg font-medium"
-            >
-              Book A Free Call
-              <span className="bg-white text-black p-3 rounded-full transition-transform duration-300 group-hover:rotate-45">
-                <FiArrowUpRight size={20} />
-              </span>
-            </Link>
+            <Button variant="primary">Book A Call</Button>
           </div>
 
           {/* Links Section */}
           <div className="lg:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-8">
             <div>
-              <h4 className="text-lg font-bold mb-6">Main Pages</h4>
+              <h4 className="text-lg mb-6">Main Pages</h4>
               <ul className="space-y-4">
                 {footerLinks.mainPages.map((link) => (
                   <li key={link.name}>
@@ -70,7 +63,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-bold mb-6">Inner Pages</h4>
+              <h4 className="text-lg mb-6">Inner Pages</h4>
               <ul className="space-y-4">
                 {footerLinks.innerPages.map((link) => (
                   <li key={link.name}>
@@ -82,7 +75,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-bold mb-6">Utility Pages</h4>
+              <h4 className="text-lg mb-6">Utility Pages</h4>
               <ul className="space-y-4">
                 {footerLinks.utilityPages.map((link) => (
                   <li key={link.name}>
