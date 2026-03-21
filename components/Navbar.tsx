@@ -20,7 +20,7 @@ export default function Navbar() {
           <Link href="/about" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Platform</Link>
           <Link href="/how-it-works" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">How it works</Link>
           <Link href="/pricing" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Features</Link>
-          <Link href="/project" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Contact</Link>
+          <Link href="/contact" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Contact</Link>
           {/* <div className="flex items-center gap-1 cursor-pointer group">
             <span className="text-[15px] font-medium text-gray-700 group-hover:text-black transition-colors">All Pages</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500 group-hover:text-black transition-colors">

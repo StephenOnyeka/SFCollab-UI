@@ -6,22 +6,23 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "Discovery",
-    description: "We explore your brand, audience, and goals to uncover clear marketing opportunities and align the direction before moving forward.",
+    title: "Ideation",
+    description: "Share an idea or join one. Explore your desired brand, audience, and goals to uncover clear opportunities and align the direction before moving forward.",
   },
   {
     number: "02",
-    title: "Ideation",
-    description: "We develop creative, data-informed concepts that fit your objectives and connect naturally with your target audience.",
+    title: "Start with People",
+    // description: "We develop creative, data-informed concepts that fit your objectives and connect naturally with your target audience.",
+    description: "With whatever purpose you have, we have people to help you with it. Meet founders, builders, designers, and thinkers — all in one place. No pitching. No pressure. Just collaboration.",
   },
   {
     number: "03",
-    title: "Strategy & Design",
+    title: "Execution",
     description: "We turn ideas into a focused marketing plan and craft visuals, content, and assets that communicate your message with clarity.",
   },
   {
     number: "04",
-    title: "Evaluation",
+    title: "Get Rewarded Fairly",
     description: "We track performance, analyze results, and refine your campaigns to ensure continuous improvement and stronger outcomes.",
   },
 ];
@@ -42,16 +43,16 @@ const ProcessFlow = () => {
           
           {/* Left Column: Title and Badge */}
           <div className="lg:col-span-5 flex flex-col items-start lg:sticky lg:top-32 h-fit">
-            <div className="flex items-center gap-2 mb-6">
+            {/* <div className="flex items-center gap-2 mb-6">
               <span className="text-black font-bold">✦</span>
               <span className="text-sm font-bold tracking-widest uppercase text-black">Process</span>
-            </div>
+            </div> */}
             
-            <h2 className="text-5xl md:text-6xl font-semibold text-gray-900 leading-[1.1] tracking-tight mb-6">
-              Our Process <br /> Flow
+            <h2 className="text-3xl md:text-4xl text-gray-900 leading-[1.1] tracking-tight mb-6">
+              Our Process Flow
             </h2>
             
-            <p className="text-lg text-gray-500 max-w-sm leading-relaxed">
+            <p className="text-base text-gray-500 max-w-sm leading-relaxed">
               A streamlined process that guides every project from idea to execution with precision.
             </p>
           </div>
@@ -64,7 +65,7 @@ const ProcessFlow = () => {
               {/* Animated Progress Line */}
               <motion.div 
                 style={{ height: lineHeight, scaleY: 1 }}
-                className="w-full bg-[#007b7f] origin-top"
+                className="w-full bg-[#ff00e5] origin-top"
               />
             </div>
 
@@ -74,17 +75,17 @@ const ProcessFlow = () => {
                   
                   {/* Step Number Circle */}
                   <div className="relative z-10 shrink-0">
-                    <div className="w-12 h-12 rounded-full border-2 border-gray-100 bg-white flex items-center justify-center text-sm font-bold text-gray-400">
+                    <div className="w-12 h-12 rounded-full border-2 border-gray-300 bg-white flex items-center justify-center text-base">
                       {step.number}
                     </div>
                   </div>
 
                   {/* Step Content */}
                   <div className="flex flex-col gap-4 pt-2">
-                    <h3 className="text-3xl font-bold text-gray-900">
+                    <h3 className="text-2xl text-gray-900">
                       {step.title}
                     </h3>
-                    <p className="text-lg text-gray-500 max-w-xl leading-relaxed">
+                    <p className="text-base text-gray-500 max-w-xl leading-relaxed">
                       {step.description}
                     </p>
                   </div>

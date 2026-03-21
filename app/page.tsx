@@ -18,7 +18,7 @@ export default function Home() {
       <EarlyTraction />
       <FAQ />
       <FinalCTA />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
