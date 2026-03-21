@@ -16,7 +16,8 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link href="/" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Home</Link>
+          {/* <Link href="/" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Home</Link> */}
+          <Link href="/about" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Platform</Link>
           <Link href="/about" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">How it works</Link>
           <Link href="/pricing" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Features</Link>
           <Link href="/project" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Contact</Link>

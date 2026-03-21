@@ -3,7 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
-import { FaDribbble, FaInstagram, FaGithub } from "react-icons/fa";
+// import { FaDribbble, FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaDribbble, FaInstagram, FaGithub, FaLinkedin, FaLinkedinIn, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Button from "./Button";
 
@@ -12,24 +13,18 @@ const Footer = () => {
 
   const footerLinks = {
     mainPages: [
-      { name: "Home V1", href: "/" },
-      { name: "Home V2", href: "/" },
-      { name: "About us", href: "/about" },
-      { name: "Project", href: "/projects" },
-      { name: "Pricing", href: "/pricing" },
-    ],
-    innerPages: [
-      { name: "Blog", href: "/blog" },
-      { name: "Blog Details", href: "/blog/details" },
-      { name: "Project Details", href: "/projects/details" },
-      { name: "Service Details", href: "/services/details" },
-      { name: "Contact", href: "/contact" },
+      { name: "Platform", href: "/" },
+      { name: "How it works", href: "/" },
+      { name: "Features", href: "/about" },
+      // { name: "Contact", href: "/projects" },
+      { name: "Help & Support", href: "/contact" },
     ],
     utilityPages: [
-      { name: "Style Guide", href: "/style-guide" },
-      { name: "Changelog", href: "/changelog" },
-      { name: "License", href: "/license" },
-      { name: "404", href: "/404" },
+      { name: "Join waitlist", href: "/waitlist" },
+      { name: "Privacy policy", href: "/privacy-policy" },
+      { name: "Terms of service", href: "/terms-of-service" },
+      { name: "Data Collection policy", href: "/data-collection-policy" },
+      // { name: "Help & Support", href: "/contact" },
     ],
   };
 
@@ -49,13 +44,14 @@ const Footer = () => {
           </div>
 
           {/* Links Section */}
-          <div className="lg:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-8">
+          {/* <div className="lg:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-8"> */}
+          <div className="lg:col-span-6 grid grid-cols-2 gap-8">
             <div>
-              <h4 className="text-lg mb-6">Main Pages</h4>
-              <ul className="space-y-4">
+              <h4 className="text-lg mb-4">Main Pages</h4>
+              <ul className="space-y-2">
                 {footerLinks.mainPages.map((link) => (
                   <li key={link.name}>
-                    <Link href={link.href} className="text-gray-400 hover:text-white transition-colors">
+                    <Link href={link.href} className="text-gray-400 text-sm hover:text-white transition-colors">
                       {link.name}
                     </Link>
                   </li>
@@ -63,23 +59,11 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="text-lg mb-6">Inner Pages</h4>
-              <ul className="space-y-4">
-                {footerLinks.innerPages.map((link) => (
-                  <li key={link.name}>
-                    <Link href={link.href} className="text-gray-400 hover:text-white transition-colors">
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg mb-6">Utility Pages</h4>
-              <ul className="space-y-4">
+              <h4 className="text-lg mb-4">Utility Pages</h4>
+              <ul className="space-y-2">
                 {footerLinks.utilityPages.map((link) => (
                   <li key={link.name}>
-                    <Link href={link.href} className="text-gray-400 hover:text-white transition-colors">
+                    <Link href={link.href} className="text-gray-400 text-sm hover:text-white transition-colors">
                       {link.name}
                     </Link>
                   </li>
@@ -90,33 +74,28 @@ const Footer = () => {
         </div>
 
         {/* Brand Name Marquee Section */}
-        <div className="relative mb-12">
-          <h1 className="text-[18vw] font-black leading-none uppercase tracking-tighter text-white select-none">
+        <div className="flex items-center justify-between">
+          <h1 className="text-[14vw] font-black leading-none uppercase tracking-tighter text-white select-none">
             SFCOLLAB
           </h1>
           
           {/* Social Icons - Positioned relative to the large text */}
-          <div className="absolute top-0 right-0 flex items-center gap-6 mt-8">
-            <Link href="#" className="p-3 border border-gray-800 rounded-full hover:bg-white hover:text-black transition-all">
-              <FaDribbble size={20} />
+          <div className="flex flex-col items-center gap-6">
+            <div className="flex items-center gap-6">
+            <Link href="#" className=" ">
+              <FaLinkedinIn size={20} className="text-gray-400 hover:text-white" />
             </Link>
-            <Link href="#" className="p-3 border border-gray-800 rounded-full hover:bg-white hover:text-black transition-all">
-              <FaInstagram size={20} />
+            <Link href="#" className=" ">
+              <FaInstagram size={20} className="text-gray-400 hover:text-white" />
             </Link>
-            <Link href="#" className="p-3 border border-gray-800 rounded-full hover:bg-white hover:text-black transition-all">
-              <FaXTwitter size={20} />
+            <Link href="#" className=" ">
+              <FaTiktok size={20} className="text-gray-400 hover:text-white" />
             </Link>
-            <Link href="#" className="p-3 border border-gray-800 rounded-full hover:bg-white hover:text-black transition-all">
-              <FaGithub size={20} />
+            <Link href="#" className=" ">
+              <FaXTwitter size={20} className="text-gray-400 hover:text-white" />
             </Link>
-          </div>
-
-          {/* Status Pill */}
-          <div className="absolute bottom-8 right-0">
-            <div className="flex items-center gap-2 bg-[#0a0a0a] border border-gray-800 rounded-full px-4 py-2 text-sm font-medium">
-              <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-              Operational
             </div>
+              <span className="text-gray-400 text-xs">sfcollab333@gmail.com</span>
           </div>
         </div>
 

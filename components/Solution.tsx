@@ -90,7 +90,8 @@ export default function Solution() {
                           Join the builders who are bypassing traditional friction to focus on what matters: the product.
                       </p>
                       <div className="flex flex-wrap gap-4 mt-2">
-                          <Button variant="primary">Get Started</Button>
+                          {/* <Button variant="primary">Get Started</Button> */}
+                          <Button variant="primary">How it Works</Button>
                       </div>
                   </div>
                   
@@ -170,18 +171,10 @@ export default function Solution() {
 
                     <div className="relative z-10 flex flex-col items-center gap-4">
                         <div className="w-16 h-16 rounded-2xl bg-[#6E00CC] shadow-[0_0_30px_#6E00CC] flex items-center justify-center">
-                            {/* <MdOutlineAutoAwesome className="w-8 h-8 text-white" /> */}
                             <div className='w-10 h-10 bg-white rounded-full'>
                               <Image alt='logo' src={'/logo.svg'} width={50} height={50}/>
                             </div>
                         </div>
-                        {/* <motion.p 
-                          animate={{ opacity: [0.4, 0.8, 0.4] }}
-                          transition={{ duration: 3, repeat: Infinity }}
-                          className="text-sm text-center text-white/60 uppercase tracking-[0.3em] font-medium"
-                        >
-                          Network Sync
-                        </motion.p> */}
                     </div>
                 </div>
             </div>
