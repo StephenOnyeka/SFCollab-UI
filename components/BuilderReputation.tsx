@@ -11,6 +11,7 @@ import {
   MdOutlineSecurity,
   MdAutoGraph
 } from 'react-icons/md';
+import Image from 'next/image';
 
 export default function BuilderReputation() {
   const [score, setScore] = React.useState(0);
@@ -196,9 +197,23 @@ export default function BuilderReputation() {
                     </div>
                 </div>
 
-                <button className="w-full bg-white border border-[#6E00CC]/20 text-[#6E00CC] py-4 rounded-2xl text-sm font-bold uppercase tracking-[0.2em] hover:bg-[#6E00CC] hover:text-white transition-all">
+                {/* <button className="w-full bg-white border border-[#6E00CC]/20 text-[#6E00CC] py-4 rounded-2xl text-sm font-bold uppercase tracking-[0.2em] hover:bg-[#6E00CC] hover:text-white transition-all">
                     View Methodology
-                </button>
+                </button> */}
+                {/* <div className="relative z-10 flex flex-col items-center gap-4">
+                    <div className="w-16 h-16 rounded-2xl bg-[#6E00CC] shadow-[0_0_30px_#6E00CC] flex items-center justify-center">
+                        <div className='w-10 h-10 bg-white rounded-full'>
+                            <Image alt='logo' src={'/logo.svg'} width={50} height={50}/>
+                        </div>
+                    </div>
+                </div> */}
+                <div className="relative z-10 flex items-center gap-4">
+                    {/* <div className="w-16 h-16 rounded-2xl bg-[#6E00CC] shadow-[0_0_30px_#6E00CC] flex items-center justify-center"> */}
+                        {/* <div className='w-12 h-12 bg-white rounded-full p-2 border border-gray-400'>
+                            <Image alt='logo' src={'/logo.svg'} width={50} height={50}/>
+                        </div> */}
+                    {/* </div> */}
+                </div>
             </motion.div>
 
           </div>

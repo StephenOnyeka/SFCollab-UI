@@ -40,7 +40,7 @@ const Footer = () => {
             <h2 className="text-3xl md:text-4xl leading-tight mb-8 max-w-sm">
               Let's Build Your Growth Today
             </h2>
-            <Button variant="primary">Book A Call</Button>
+            <Button variant="primary" className="hover:border">Get Started</Button>
           </div>
 
           {/* Links Section */}
@@ -82,13 +82,13 @@ const Footer = () => {
           {/* Social Icons - Positioned relative to the large text */}
           <div className="flex flex-col items-center gap-6">
             <div className="flex items-center gap-6">
-            <Link href="#" className=" ">
+            <Link href="https://www.linkedin.com/company/sfcollab" className=" ">
               <FaLinkedinIn size={20} className="text-gray-400 hover:text-white" />
             </Link>
-            <Link href="#" className=" ">
+            <Link href="https://www.instagram.com/sfcollab_official/" className=" ">
               <FaInstagram size={20} className="text-gray-400 hover:text-white" />
             </Link>
-            <Link href="#" className=" ">
+            <Link href="https://www.tiktok.com/@sfcollab_official" className=" ">
               <FaTiktok size={20} className="text-gray-400 hover:text-white" />
             </Link>
             <Link href="#" className=" ">

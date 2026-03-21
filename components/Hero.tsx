@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Button from "@/components/Button";
 import { MdPlayArrow, MdFiberManualRecord } from "react-icons/md";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -20,6 +23,7 @@ export default function Hero() {
                   alt="Reviewer"
                   width={28}
                   height={28}
+                  className="rounded-full"
                 />
               </div>
               <div className="w-7 h-7 rounded-full border-2 border-white overflow-hidden bg-gray-300">
@@ -28,6 +32,8 @@ export default function Hero() {
                   alt="Reviewer"
                   width={28}
                   height={28}
+                  className="rounded-full"
+
                 />
               </div>
             </div>
@@ -49,20 +55,39 @@ export default function Hero() {
             <Button variant="outline" className="border border-black" >Join waitlist</Button>
           </div>
 
-          {/* Feature Pillars */}
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-0 mt-2">
-            <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
-              <MdFiberManualRecord className="w-3 h-3 text-[#6E00CC]" />
-              Pay per growth
-            </div>
-            <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
-              <MdFiberManualRecord className="w-3 h-3 text-[#6E00CC]" />
-              System-ready
-            </div>
-            <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
-              <MdFiberManualRecord className="w-3 h-3 text-[#6E00CC]" />
-              Start Free
-            </div>
+          {/* Feature Pillars - Infinite Scroll */}
+          {/* flex flex-wrap items-center gap-x-4 gap-y-0 mt-2 */}
+          <div className="max-w-sm overflow-hidden mt-2">
+            <motion.div 
+              className="flex items-center gap-x-4 whitespace-nowrap"
+              animate={{ x: ["-50%", "0%"] }}
+              transition={{ 
+                x: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 50,
+                  ease: "linear",
+                }
+              }}
+              style={{ width: "fit-content" }}
+            >
+              {[...Array(6)].map((_, i) => (
+                <div key={i} className="flex items-center gap-x-8">
+                  <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
+                    <MdFiberManualRecord className="w-3 h-3 text-[#6E00CC]" />
+                    Pay per growth
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
+                    <MdFiberManualRecord className="w-3 h-3 text-[#6E00CC]" />
+                    System-ready
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-[#1A1A1A]/70">
+                    <MdFiberManualRecord className="w-3 h-3 text-[#6E00CC]" />
+                    Start Free
+                  </div>
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
 
