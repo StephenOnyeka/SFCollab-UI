@@ -10,7 +10,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 md:gap-8 lg:gap-10">
             {/* Section Header */}
-            <div className="flex flex-col md:flex-row justify-between items-end gap-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-8">
               <div className="flex flex-col gap-6 max-w-2xl">
                 <span className="text-[#6E00CC] font-normal tracking-[0.2em] uppercase text-sm border-b-2 border-[#6E00CC]/20 pb-1 w-fit">
                   Contact Us
