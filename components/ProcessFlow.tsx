@@ -18,12 +18,13 @@ const steps = [
   {
     number: "03",
     title: "Execution",
-    description: "We turn ideas into a focused marketing plan and craft visuals, content, and assets that communicate your message with clarity.",
+    // description: "We turn ideas into a focused marketing plan and craft visuals, content, and assets that communicate your message with clarity.",
+    description: "Tasks are clear. Progress is visible. Effort is tracked. You always know what needs to be done, who's doing it, and how value is created",
   },
   {
     number: "04",
     title: "Get Rewarded Fairly",
-    description: "We track performance, analyze results, and refine your campaigns to ensure continuous improvement and stronger outcomes.",
+    description: "Work turns into value. That value turns into pay, ownership, reputation, and opportunity. No empty promises. It's built into the system.",
   },
 ];
 
@@ -53,7 +54,7 @@ const ProcessFlow = () => {
             </h2>
             
             <p className="text-base text-gray-500 max-w-sm leading-relaxed">
-              A streamlined process that guides every project from idea to execution with precision.
+              The streamlined process that guides every project from idea to execution with precision.
             </p>
           </div>
 
