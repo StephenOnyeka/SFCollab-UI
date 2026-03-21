@@ -54,7 +54,7 @@ export default function BuilderReputation() {
               <h2 className="text-[42px] md:text-[60px] font-normal text-[#1A1A1A] leading-tight tracking-tighter">
                 Execution builds <span className="italic text-gray-400">reputation.</span>
               </h2>
-              <p className="text-lg text-gray-500 leading-relaxed">
+              <p className="text-base text-gray-500 leading-relaxed">
                 We've replaced social clout with verifiable data. SF profiles represent a history of finished work, peer-reviewed execution, and milestone consistency.
               </p>
             </div>

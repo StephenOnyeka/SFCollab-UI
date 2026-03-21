@@ -87,15 +87,6 @@ const FAQ = () => {
           
           {/* Left Column: Title and Badge */}
           <div className="lg:col-span-5 flex flex-col items-start pt-4">
-            {/* <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="flex items-center gap-2 mb-6"
-            >
-              <span className="text-gray-900">✦</span>
-              <span className="text-sm font-bold tracking-widest uppercase text-gray-900">FAQ</span>
-            </motion.div> */}
             
             <motion.h2 
               initial={{ opacity: 0, x: -20 }}

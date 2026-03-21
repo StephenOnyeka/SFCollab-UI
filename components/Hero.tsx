@@ -45,7 +45,7 @@ export default function Hero() {
           </h1>
 
           {/* Description */}
-          <p className="text-sm text-gray-600 max-w-lg">
+          <p className="text-base text-gray-600 max-w-lg">
             Collaboration without friction The real-time canvas where distributed teams build, think, and create in sync.
           </p>
 

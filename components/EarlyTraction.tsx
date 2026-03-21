@@ -41,7 +41,7 @@ export default function EarlyTraction() {
             <h2 className="text-[42px] md:text-[56px] font-normal leading-[1.1] tracking-tighter text-[#1A1A1A]">
                 The ecosystem is <br /> <span className="text-gray-400 italic">already forming.</span>
             </h2>
-            <p className="text-lg text-gray-500 max-w-lg leading-relaxed">
+            <p className="text-base text-gray-500 max-w-lg leading-relaxed">
                 SFCollab is more than a platform—it's infrastructure for the next generation of builders. We're seeing organic team formation happen at record speeds.
             </p>
             
