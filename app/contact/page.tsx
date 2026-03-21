@@ -1,11 +1,12 @@
 import Button from "@/components/Button";
+import FAQ from "@/components/FAQ";
 import Image from "next/image";
 import React from "react";
 
 export default function ContactPage() {
   return (
     <div>
-      <section className="w-full bg-white py-10 lg:py-20 overflow-hidden border-t border-gray-100">
+      <section className="w-full bg-white pt-10 lg:pt-20 overflow-hidden border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 md:gap-8 lg:gap-10">
             {/* Section Header */}
@@ -72,6 +73,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <FAQ />
+      {/* <FinalCTA /> */}
     </div>
   );
 }

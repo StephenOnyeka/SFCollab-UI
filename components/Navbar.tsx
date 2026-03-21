@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-white border-b border-gray-100 py-4">
+    <nav className="w-full bg-white py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 decoration-none">
@@ -21,12 +21,6 @@ export default function Navbar() {
           <Link href="/how-it-works" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">How it works</Link>
           <Link href="/pricing" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Features</Link>
           <Link href="/contact" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Contact</Link>
-          {/* <div className="flex items-center gap-1 cursor-pointer group">
-            <span className="text-[15px] font-medium text-gray-700 group-hover:text-black transition-colors">All Pages</span>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500 group-hover:text-black transition-colors">
-              <path d="m6 9 6 6 6-6"/>
-            </svg>
-          </div> */}
         </div>
 
         {/* CTA Button */}

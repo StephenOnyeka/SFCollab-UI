@@ -44,7 +44,6 @@ const Footer = () => {
           </div>
 
           {/* Links Section */}
-          {/* <div className="lg:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-8"> */}
           <div className="lg:col-span-6 grid grid-cols-2 gap-8">
             <div>
               <h4 className="text-lg mb-4">Main Pages</h4>

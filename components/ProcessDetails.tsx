@@ -14,7 +14,7 @@ const ProcessDetails = () => {
             {/* Overview */}
             <div className="grid grid-cols-1 gap-8">
               <h2 className="text-3xl font-medium text-gray-900">Overview</h2>
-              <p className="text-lg text-gray-800 ">
+              <p className="text-lg text-gray-600 ">
                 At SFCollab, we focus on creating simple yet effective digital
                 experiences tailored for individuals and small businesses. Our
                 workflow is supported by reliable tools and technologies that
@@ -33,14 +33,14 @@ const ProcessDetails = () => {
                 The Challenge
               </h2>
               <div className="space-y-6">
-                <p className="text-lg text-gray-800">
+                <p className="text-lg text-gray-600">
                   This project required building a clean, functional website
                   using a pre-designed template—perfect for clients who need a
                   straightforward online presence without complex customization.
                   The structure typically includes 5-10 pages, focusing on
                   clarity, usability, and essential branding.
                 </p>
-                <p className="text-lg text-gray-800">
+                <p className="text-lg text-gray-600">
                   To keep the process efficient, we used Trello for tracking
                   progress, online meeting tools for discussions, and
                   collaborative editing platforms to maintain consistency across
@@ -75,7 +75,7 @@ const ProcessDetails = () => {
             <div className="max-w-4xl mx-auto">
               <div className="grid grid-cols-1 gap-8">
                 <h2 className="text-3xl font-medium text-gray-900">Result</h2>
-                <p className="text-lg text-gray-800">
+                <p className="text-lg text-gray-600">
                   The final outcome delivered a smooth, minimal, and fully
                   responsive website that meets the needs of small businesses or
                   individuals wanting a strong digital presence. Throughout the
