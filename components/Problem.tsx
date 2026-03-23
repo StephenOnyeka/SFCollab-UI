@@ -3,6 +3,8 @@
 import React from 'react';
 import { MdOutlineNavigateNext } from 'react-icons/md';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import PoweredBy from './SFEngine';
 
 export default function Problem() {
   const problems = [
@@ -74,34 +76,12 @@ export default function Problem() {
 
                     {/* Center: The "Broken" Node */}
                     <div className="relative flex items-center justify-center">
-                        <motion.div 
-                            animate={{ 
-                                scale: [1, 1.3, 1],
-                                opacity: [0.5, 1, 0.5]
-                            }}
-                            transition={{ duration: 2, repeat: Infinity }}
-                            className="absolute w-8 h-8 bg-[#6E00CC]/20 rounded-full blur-md"
-                        />
-                        <motion.div 
-                            animate={{ 
-                                scale: [1, 1.1, 1],
-                                rotate: [0, 90, 180, 270, 360],
-                                filter: ["blur(0px)", "blur(1px)", "blur(0px)"]
-                            }}
-                            transition={{ 
-                                scale: { duration: 2, repeat: Infinity },
-                                rotate: { duration: 10, repeat: Infinity, ease: "linear" },
-                                filter: { duration: 0.5, repeat: Infinity, repeatType: "reverse" }
-                            }}
-                            className="w-5 h-5 rounded-sm bg-[#6E00CC] shadow-[0_0_20px_#6E00CC] flex items-center justify-center transform rotate-45"
-                        >
-                            <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
-                        </motion.div>
+                        <PoweredBy />
                     </div>
 
                     {/* Right: Leaking / Broken connection */}
                     <div className="flex-1 h-1 bg-white/5 rounded-full overflow-hidden relative">
-                        <motion.div 
+                        <motion.div
                             animate={{ 
                                 x: ["100%", "-100%"],
                                 opacity: [0.2, 0.4, 0.2]

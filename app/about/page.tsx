@@ -5,14 +5,17 @@ import ValuesSection from '@/components/about/ValuesSection';
 import GuidingPrinciples from '@/components/about/GuidingPrinciples';
 import AIToolsAndSecurity from '@/components/about/AIToolsAndSecurity';
 import AboutCTA from '@/components/about/AboutCTA';
+import { AboutCTA2 } from '@/components/about/AboutCTA';
 
 export default function About() {
   return (
     <div className="flex flex-col min-h-screen">
       <AboutHero />
       <MissionSection />
-      <GuidingPrinciples />
+      {/* <GuidingPrinciples /> */}
+      <AboutCTA2 />
       <ValuesSection />
+      {/* <AboutCTA2 /> */}
       <AIToolsAndSecurity />
       <AboutCTA />
     </div>

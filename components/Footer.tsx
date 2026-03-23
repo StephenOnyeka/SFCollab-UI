@@ -74,7 +74,7 @@ const Footer = () => {
 
         {/* Brand Name Marquee Section */}
         <div className="flex items-center justify-between">
-          <h1 className="text-[14vw] font-black leading-none uppercase tracking-tighter text-white select-none">
+          <h1 className="text-[14vw] font-black leading-none uppercase tracking-tighter text-white/50 select-none">
             SFCOLLAB
           </h1>
           

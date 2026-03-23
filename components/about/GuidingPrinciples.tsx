@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { MdCheckCircle, MdArrowForward } from "react-icons/md";
+import PoweredBy from "../SFEngine";
 
 const contrasts = [
   { old: "Temporary gigs", new: "Long-term collaborations" },
@@ -62,7 +63,7 @@ export default function GuidingPrinciples() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="bg-[#6E00CC] rounded-[2rem] p-8 sm:p-10 shadow-2xl relative overflow-hidden"
+            className="bg-[#6E00CC] rounded-4xl p-8 sm:p-10 shadow-2xl relative overflow-hidden"
           >
             <h3 className="text-2xl sm:text-3xl font-bold mb-8 relative z-10 text-white">Guiding Principles</h3>
             <ul className="space-y-6 relative z-10">
@@ -76,6 +77,7 @@ export default function GuidingPrinciples() {
           </motion.div>
         </div>
       </div>
+      {/* <PoweredBy /> */}
     </section>
   );
 }

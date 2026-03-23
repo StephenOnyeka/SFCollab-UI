@@ -36,7 +36,8 @@ export default function AIToolsAndSecurity() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-3xl sm:text-4xl font-semibold text-[#1A1A1A]"
+              // className="text-3xl sm:text-4xl font-semibold text-[#1A1A1A]"
+              className="text-3xl sm:text-4xl text-[#1A1A1A]"
             >
               Let AI handle the busy work so you can focus on building.
             </motion.h2>
@@ -52,8 +53,8 @@ export default function AIToolsAndSecurity() {
                 className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
               >
                 <tool.icon className="text-3xl text-blue-600 mb-4" />
-                <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">{tool.title}</h3>
-                <p className="text-gray-600">{tool.desc}</p>
+                <h3 className="text-xl text-[#1A1A1A] mb-2">{tool.title}</h3>
+                <p className="text-gray-600 text-base">{tool.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -76,7 +77,8 @@ export default function AIToolsAndSecurity() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-3xl sm:text-4xl font-semibold text-[#1A1A1A]"
+              // className="text-3xl sm:text-4xl font-semibold text-[#1A1A1A]"
+              className="text-3xl sm:text-4xl text-[#1A1A1A]"
             >
               Built to protect your vision.
             </motion.h2>
@@ -92,8 +94,8 @@ export default function AIToolsAndSecurity() {
                 className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
               >
                 <sec.icon className="text-3xl text-green-600 mb-4" />
-                <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">{sec.title}</h3>
-                <p className="text-gray-600">{sec.desc}</p>
+                <h3 className="text-xl text-[#1A1A1A] mb-2">{sec.title}</h3>
+                <p className="text-gray-600 text-base">{sec.desc}</p>
               </motion.div>
             ))}
           </div>

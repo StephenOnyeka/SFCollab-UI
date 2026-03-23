@@ -39,12 +39,14 @@ export default function ValuesSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1A1A1A] tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl text-[#1A1A1A] tracking-tight"
           >
             Benefits Built for Builders
+            {/* Our Guiding Principles */}
           </motion.h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center"> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center content-center">
           {values.map((v, i) => (
             <motion.div 
               key={v.title}
@@ -57,8 +59,9 @@ export default function ValuesSection() {
               <div className="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#6E00CC]/10 transition-colors">
                 <v.icon className="text-2xl text-[#1A1A1A] group-hover:text-[#6E00CC] transition-colors" />
               </div>
-              <h3 className="text-xl font-semibold text-[#1A1A1A] mb-3">{v.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{v.description}</p>
+              {/* <h3 className="text-xl font-semibold text-[#1A1A1A] mb-3">{v.title}</h3> */}
+              <h3 className="text-xl text-[#1A1A1A] mb-3">{v.title}</h3>
+              <p className="text-gray-600 text-base leading-relaxed">{v.description}</p>
             </motion.div>
           ))}
         </div>
