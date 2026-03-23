@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 function FlowingTrace({ d, color, delay, duration, fadeDelay, sw }: { d: string; color: string; delay: number; duration: number; fadeDelay?: number; sw: number }) {
-  const ref = useRef(null);
+  const ref = useRef<SVGPathElement>(null);
 
   useEffect(() => {
     const el = ref.current;
@@ -10,8 +10,8 @@ function FlowingTrace({ d, color, delay, duration, fadeDelay, sw }: { d: string;
     const len = el.getTotalLength();
 
     el.style.transition = "none";
-    el.style.strokeDasharray = len;
-    el.style.strokeDashoffset = len;
+    el.style.strokeDasharray = len.toString();
+    el.style.strokeDashoffset = len.toString();
     el.style.opacity = "1";
 
     const drawTimer = setTimeout(() => {
@@ -25,7 +25,7 @@ function FlowingTrace({ d, color, delay, duration, fadeDelay, sw }: { d: string;
       el.style.opacity = "0";
       setTimeout(() => {
         el.style.transition = "none";
-        el.style.strokeDashoffset = len;
+        el.style.strokeDashoffset = len.toString();
         el.style.opacity = "1";
         setTimeout(() => {
           el.style.transition = `stroke-dashoffset ${duration}s cubic-bezier(0.4, 0, 0.2, 1)`;
@@ -117,7 +117,8 @@ export default function PoweredBy() {
   return (
     <div style={{
       width: 300, height: 200,
-      background: "#080808",
+      // background: "#080808",
+      background: "transparent",
       borderRadius: 12,
       position: "relative",
       overflow: "hidden",

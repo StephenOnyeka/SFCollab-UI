@@ -50,7 +50,8 @@ export default function Problem() {
             </p>
             
             {/* Visual element: A "Broken" Diagram - INFINITE ANIMATION */}
-            <div className="mt-8 relative h-40 w-full overflow-hidden rounded-3xl bg-linear-to-br from-white/5 to-transparent border border-white/10 p-8">
+            {/* <div className="mt-8 relative h-40 w-full overflow-hidden rounded-3xl bg-linear-to-br from-white/5 to-transparent border border-white/10 p-8"> */}
+            <div className="mt-8 relative h-40 w-full overflow-hidden rounded-3xl p-8">
                 {/* Background Glow */}
                 <motion.div 
                     animate={{ 

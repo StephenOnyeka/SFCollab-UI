@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import Button from '@/components/Button';
-import Image from 'next/image';
+import Link from "next/link";
+import Button from "@/components/Button";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -9,7 +9,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 decoration-none">
           <div className="relative w-8 h-8">
-            <Image alt='logo' src={'/logo.svg'} width={100} height={100}/>
+            <Image alt="logo" src={"/logo.svg"} width={100} height={100} />
           </div>
           <span className="text-2xl text-[#1A1A1A]">SFCollab</span>
         </Link>
@@ -17,10 +17,30 @@ export default function Navbar() {
         {/* Navigation Links */}
         <div className="hidden md:flex items-center space-x-8">
           {/* <Link href="/" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Home</Link> */}
-          <Link href="/about" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Platform</Link>
-          <Link href="/how-it-works" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">How it works</Link>
-          <Link href="/pricing" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Features</Link>
-          <Link href="/contact" className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors">Contact</Link>
+          <Link
+            href="/about"
+            className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors"
+          >
+            Platform
+          </Link>
+          <Link
+            href="/how-it-works"
+            className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors"
+          >
+            How it works
+          </Link>
+          <Link
+            href="/features"
+            className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors"
+          >
+            Features
+          </Link>
+          <Link
+            href="/contact"
+            className="text-[15px] font-medium text-gray-700 hover:text-black transition-colors"
+          >
+            Contact
+          </Link>
         </div>
 
         {/* CTA Button */}

@@ -35,7 +35,11 @@ export default function FinalCTA() {
             </motion.div> */}
             
             <h2 className="text-[48px] md:text-[60px] font-normal leading-tight tracking-[calc(-0.04em)] text-white">
-                Start <span className="text-[#6E00CC]">building.</span>
+                Start 
+                {/* <span className="text-[#6E00CC]">building.</span> */}
+                <span className="bg-clip-text text-transparent bg-linear-to-r from-[#6E00CC] to-[#A855F7]">
+            {" "}building.
+          </span>
             </h2>
             
             <p className="text-base text-gray-400 leading-relaxed">

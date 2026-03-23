@@ -13,9 +13,9 @@ const Footer = () => {
 
   const footerLinks = {
     mainPages: [
-      { name: "Platform", href: "/" },
-      { name: "How it works", href: "/" },
-      { name: "Features", href: "/about" },
+      { name: "Platform", href: "/about" },
+      { name: "How it works", href: "/how-it-works" },
+      { name: "Features", href: "/features" },
       // { name: "Contact", href: "/projects" },
       { name: "Help & Support", href: "/contact" },
     ],

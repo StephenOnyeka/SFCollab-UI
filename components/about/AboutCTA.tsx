@@ -16,10 +16,15 @@ export default function AboutCTA() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight mb-8"
+              // className="text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight mb-8"
+              className="text-[48px] md:text-[60px] text-white tracking-[calc(-0.04em)] mb-8 leading-tight"
             >
               The world has enough talkers. <br className="hidden sm:block" />
-              <span className="text-[#6E00CC]">It needs more builders.</span>
+              It needs 
+              {/* <span className="text-[#6E00CC]">more builders.</span> */}
+              <span className="bg-clip-text text-transparent bg-linear-to-r from-[#6E00CC] to-[#A855F7]">
+             {" "}more builders.
+          </span>
             </motion.h2>
 
             <motion.p

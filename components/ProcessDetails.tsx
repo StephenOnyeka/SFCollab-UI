@@ -15,15 +15,7 @@ const ProcessDetails = () => {
             <div className="grid grid-cols-1 gap-4">
               <h2 className="text-2xl font-medium text-gray-900">Overview</h2>
               <p className="text-base text-gray-600 ">
-                At SFCollab, we focus on creating simple yet effective digital
-                experiences tailored for individuals and small businesses. Our
-                workflow is supported by reliable tools and technologies that
-                keep communication smooth and productivity high. We use project
-                management platforms like Trello to organize tasks and
-                timelines, while Zoom or Google Meet ensures effortless virtual
-                collaboration. For shared documents and real-time editing, we
-                rely on tools such as Google Docs or Office Online, helping
-                every project stay aligned from start to finish.
+                SFCollab is the definitive Startup Operating System—a unified platform where ideas meet execution. We've replaced the fragmented stack of disconnected tools with a single, calm, and continuous workspace. Built for serious teams and forward-thinking founders, SFCollab integrates real-time collaboration, intelligent operations, and AI-assisted workflows into one seamless environment.
               </p>
             </div>
 
@@ -34,17 +26,10 @@ const ProcessDetails = () => {
               </h2>
               <div className="space-y-6">
                 <p className="text-base text-gray-600">
-                  This project required building a clean, functional website
-                  using a pre-designed template—perfect for clients who need a
-                  straightforward online presence without complex customization.
-                  The structure typically includes 5-10 pages, focusing on
-                  clarity, usability, and essential branding.
+                  Modern startups lose critical momentum switching context between project management boards, video calls, document editors, and messaging apps. This fragmented approach scatters knowledge, slows down execution, and creates unnecessary friction.
                 </p>
                 <p className="text-base text-gray-600">
-                  To keep the process efficient, we used Trello for tracking
-                  progress, online meeting tools for discussions, and
-                  collaborative editing platforms to maintain consistency across
-                  all content and design elements.
+                  The challenge was to build an infrastructure capable of scaling from a rough MVP to a unicorn, without adding operational noise or artificial delays to the founder's daily workflow.
                 </p>
               </div>
             </div>
@@ -76,15 +61,7 @@ const ProcessDetails = () => {
               <div className="grid grid-cols-1 gap-4">
                 <h2 className="text-2xl font-medium text-gray-900">Result</h2>
                 <p className="text-base text-gray-600">
-                  The final outcome delivered a smooth, minimal, and fully
-                  responsive website that meets the needs of small businesses or
-                  individuals wanting a strong digital presence. Throughout the
-                  process, we utilized Trello for organization, video
-                  conferencing tools for seamless communication, and
-                  collaborative document platforms to ensure accuracy and
-                  alignment across all project details. The result is a
-                  streamlined website built with clarity, reliability, and
-                  efficiency at its core.
+                  The result is a lightning-fast, real-time creative ecosystem featuring sub-50ms sync latency and an infinite canvas scale. Every action, update, and idea syncs instantly across teams and boards without refresh or delay. From generating structural business plans to discovering elite talent, SFCollab delivers a friction-free environment where distributed teams can build, think, and win together.
                 </p>
               </div>
             </div>
