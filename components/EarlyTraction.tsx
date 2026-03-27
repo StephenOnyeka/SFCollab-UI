@@ -26,7 +26,7 @@ export default function EarlyTraction() {
     <section className="w-full bg-[#FBFBFB] py-24 lg:py-32 border-y border-gray-100 relative overflow-hidden">
       {/* Background patterns */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none select-none">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#6E00CC_1px,transparent_1px)] [background-size:40px_40px]" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#6E00CC_1px,transparent_1px)] bg-size-[40px_40px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

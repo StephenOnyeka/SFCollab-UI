@@ -46,7 +46,7 @@ const ProcessDetails = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="relative aspect-[4/2] w-full rounded-3xl overflow-hidden mb-16 shadow-lg"
+              className="relative aspect-4/2 w-full rounded-3xl overflow-hidden mb-16 shadow-lg"
             >
               <Image
                 src="/images/co-founders.jpg"

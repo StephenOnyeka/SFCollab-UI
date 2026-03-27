@@ -103,7 +103,7 @@ export default function Problem() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="group relative bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 p-8 rounded-[2.5rem] transition-all duration-300 hover:-translate-y-1"
+                className="group relative bg-white/3 hover:bg-white/6 border border-white/10 p-8 rounded-[2.5rem] transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="flex items-start gap-6">
                   <span className="text-2xl font-normal text-[#6E00CC]/40 font-mono tracking-tighter">
@@ -135,7 +135,8 @@ export default function Problem() {
                 className="mt-8 p-10 rounded-[3rem] bg-linear-to-br from-[#6E00CC] to-[#450080] shadow-2xl relative overflow-hidden group"
             >
                 {/* Background Pattern */}
-                <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_2px_2px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[length:24px_24px]"></div>
+                {/* <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_2px_2px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[length:24px_24px]"></div> */}
+                <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_2px_2px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-size-[24px_24px]"></div>
                 
                 <div className="relative flex flex-col gap-4 text-center items-center">
                     <p className="text-white/90 font-normal text-xl tracking-tight leading-snug">

@@ -39,7 +39,7 @@ export default function AboutHero() {
           Together
         </motion.h1> */}  
       </div>
-      <div className="relative aspect-[8/4] w-4xl rounded-[2.5rem] overflow-hidden shadow-2xl mx-auto ">
+      <div className="relative aspect-8/4 w-4xl rounded-4xl overflow-hidden shadow-2xl mx-auto ">
         <Image
           src="/images/r.jpg"
           alt="Marketing experts collaborating"

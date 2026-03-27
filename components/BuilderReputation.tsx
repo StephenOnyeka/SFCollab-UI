@@ -124,7 +124,7 @@ export default function BuilderReputation() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
-                            className="bg-gray-50 border border-gray-100 p-6 rounded-[2rem] flex flex-col items-center gap-3 text-center hover:bg-white hover:shadow-xl transition-all group"
+                            className="bg-gray-50 border border-gray-100 p-6 rounded-4xl flex flex-col items-center gap-3 text-center hover:bg-white hover:shadow-xl transition-all group"
                         >
                             <div className={`w-12 h-12 ${stat.bg} ${stat.color} rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform`}>
                                 {stat.icon}

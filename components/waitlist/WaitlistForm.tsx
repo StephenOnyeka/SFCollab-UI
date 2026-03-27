@@ -23,7 +23,7 @@ export default function WaitlistForm() {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto p-8 rounded-[2rem] bg-white border border-gray-100 shadow-[0_8px_40px_rgb(0,0,0,0.06)] relative overflow-hidden">
+    <div className="w-full max-w-md mx-auto p-8 rounded-4xl bg-white border border-gray-100 shadow-[0_8px_40px_rgb(0,0,0,0.06)] relative overflow-hidden">
       {/* Decorative gradient blur in background */}
       <div className="absolute -top-20 -right-20 w-40 h-40 bg-[#6E00CC]/10 blur-[50px] rounded-full pointer-events-none" />
       

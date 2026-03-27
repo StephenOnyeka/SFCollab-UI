@@ -96,7 +96,7 @@ export default function Hero() {
 
         {/* Right Column - Image & Overlays */}
         <div className="relative">
-          <div className="relative aspect-[16/14] w-full rounded-[2.5rem] overflow-hidden shadow-2xl">
+          <div className="relative aspect-16/14 w-full rounded-[2.5rem] overflow-hidden shadow-2xl">
             <Image
               src="/hero-image.png"
               alt="Marketing experts collaborating"
