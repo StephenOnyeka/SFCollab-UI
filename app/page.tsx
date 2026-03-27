@@ -6,7 +6,6 @@ import BuilderReputation from "@/components/BuilderReputation";
 import EarlyTraction from "@/components/EarlyTraction";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (

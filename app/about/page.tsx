@@ -2,7 +2,6 @@ import React from 'react';
 import AboutHero from '@/components/about/AboutHero';
 import MissionSection from '@/components/about/MissionSection';
 import ValuesSection from '@/components/about/ValuesSection';
-import GuidingPrinciples from '@/components/about/GuidingPrinciples';
 import AIToolsAndSecurity from '@/components/about/AIToolsAndSecurity';
 import AboutCTA from '@/components/about/AboutCTA';
 import { AboutCTA2 } from '@/components/about/AboutCTA';

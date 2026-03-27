@@ -2,9 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FiArrowUpRight } from "react-icons/fi";
-// import { FaDribbble, FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { FaDribbble, FaInstagram, FaGithub, FaLinkedin, FaLinkedinIn, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Button from "./Button";
 
@@ -38,7 +36,7 @@ const Footer = () => {
           {/* CTA Section */}
           <div className="lg:col-span-6 flex flex-col items-start">
             <h2 className="text-3xl md:text-4xl leading-tight mb-8 max-w-sm">
-              Let's Build Your Growth Today
+              Let&apos;s Build Your Growth Today
             </h2>
             <Button variant="primary" className="hover:border">Get Started</Button>
           </div>

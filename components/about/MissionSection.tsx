@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import { motion, useScroll, useTransform} from "framer-motion";
+import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 
 export default function MissionSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -13,6 +13,11 @@ export default function MissionSection() {
   const text =
     "We exist to provide space where builders, operators, and founders come together to create real products — with clarity, fairness, and shared upside.";
   const words = text.split(" ");
+  
+  const Word = ({ children, progress, range }: { children: string, progress: MotionValue<number>, range: [number, number] }) => {
+    const opacity = useTransform(progress, range, [0.18, 1]);
+    return <motion.span style={{ opacity }} className="inline-block mr-[0.35em] last:mr-0">{children}</motion.span>;
+  };
 
   return (
     // <section ref={containerRef} className="w-full bg-[#FAFAFA] py-24">
@@ -24,17 +29,7 @@ export default function MissionSection() {
             const start = i / words.length;
             const end = Math.min((i + 1) / words.length, 1);
 
-            const opacity = useTransform(scrollYProgress, [start, end], [0.18, 1]);
-
-            return (
-              <motion.span
-                key={`${word}-${i}`}
-                style={{ opacity }}
-                className="inline-block mr-[0.35em] last:mr-0"
-              >
-                {word}
-              </motion.span>
-            );
+            return <Word key={`${word}-${i}`} progress={scrollYProgress} range={[start, end]}>{word}</Word>;
           })}
         </p>
       </div>

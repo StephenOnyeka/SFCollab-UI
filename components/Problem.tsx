@@ -3,7 +3,6 @@
 import React from 'react';
 import { MdOutlineNavigateNext } from 'react-icons/md';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import PoweredBy from './SFEngine';
 
 export default function Problem() {
@@ -46,7 +45,7 @@ export default function Problem() {
             </h2>
             {/* <p className="text-lg text-white/50 max-w-md leading-relaxed"> */}
             <p className="text-base text-white/50 max-w-md leading-relaxed">
-              We've identified a critical gap in the venture lifecycle: <strong>Capital & Talent Inefficiency.</strong> Currently, starting a project depends more on luck than on skill alignment.
+              We&apos;ve identified a critical gap in the venture lifecycle: <strong>Capital & Talent Inefficiency.</strong> Currently, starting a project depends more on luck than on skill alignment.
             </p>
             
             {/* Visual element: A "Broken" Diagram - INFINITE ANIMATION */}
@@ -140,7 +139,7 @@ export default function Problem() {
                 
                 <div className="relative flex flex-col gap-4 text-center items-center">
                     <p className="text-white/90 font-normal text-xl tracking-tight leading-snug">
-                       "SFCollab is the antidote to friction. We replace luck with architecture."
+                       &quot;SFCollab is the antidote to friction. We replace luck with architecture.&quot;
                     </p>
                     <motion.div 
                         initial={{ width: "3rem" }}

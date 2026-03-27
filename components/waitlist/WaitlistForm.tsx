@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MdCheckCircleOutline, MdArrowForward } from "react-icons/md";
+import { MdCheckCircleOutline } from "react-icons/md";
 import Button from "../Button";
 
 export default function WaitlistForm() {
@@ -40,10 +40,10 @@ export default function WaitlistForm() {
             </div>
             <div>
               <h3 className="text-2xl font-medium text-[#1A1A1A] mb-2 tracking-tight">
-                You're on the list!
+                You&apos;re on the list!
               </h3>
               <p className="text-gray-500 leading-relaxed text-base">
-                Keep an eye on your inbox. We'll be rolling out early access to select builders soon.
+                Keep an eye on your inbox. We&apos;ll be rolling out early access to select builders soon.
               </p>
             </div>
             <button

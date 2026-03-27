@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutCTA() {
   return (
@@ -73,13 +74,15 @@ export function AboutCTA2() {
               <span className="text-white/40 italic">already forming.</span>
             </h2>
             <p className="text-base text-white/40 max-w-lg leading-relaxed">
-              SFCollab is more than a platform—it's infrastructure for the next
-              generation of builders. We're seeing organic team formation happen
+              SFCollab is more than a platform—it&apos;s infrastructure for the next
+              generation of builders. We&apos;re seeing organic team formation happen
               at record speeds.
             </p>
+            <Link href="/waitlist">
             <Button variant="primary" className="w-fit">
               Join Waitlist
             </Button>
+            </Link>
             <div className="flex items-center gap-6 mt-4">
               <div className="flex -space-x-3">
                 {[1, 2, 3, 4, 5].map((i) => (
@@ -87,6 +90,7 @@ export function AboutCTA2() {
                     key={i}
                     className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 overflow-hidden"
                   >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={`https://i.pravatar.cc/100?u=sf${i}`}
                       alt="Avatar"

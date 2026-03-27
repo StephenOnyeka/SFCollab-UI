@@ -15,7 +15,7 @@ const ProcessDetails = () => {
             <div className="grid grid-cols-1 gap-4">
               <h2 className="text-2xl font-medium text-gray-900">Overview</h2>
               <p className="text-base text-gray-600 ">
-                SFCollab is the definitive Startup Operating System—a unified platform where ideas meet execution. We've replaced the fragmented stack of disconnected tools with a single, calm, and continuous workspace. Built for serious teams and forward-thinking founders, SFCollab integrates real-time collaboration, intelligent operations, and AI-assisted workflows into one seamless environment.
+                SFCollab is the definitive Startup Operating System—a unified platform where ideas meet execution. We&apos;ve replaced the fragmented stack of disconnected tools with a single, calm, and continuous workspace. Built for serious teams and forward-thinking founders, SFCollab integrates real-time collaboration, intelligent operations, and AI-assisted workflows into one seamless environment.
               </p>
             </div>
 
@@ -29,7 +29,7 @@ const ProcessDetails = () => {
                   Modern startups lose critical momentum switching context between project management boards, video calls, document editors, and messaging apps. This fragmented approach scatters knowledge, slows down execution, and creates unnecessary friction.
                 </p>
                 <p className="text-base text-gray-600">
-                  The challenge was to build an infrastructure capable of scaling from a rough MVP to a unicorn, without adding operational noise or artificial delays to the founder's daily workflow.
+                  The challenge was to build an infrastructure capable of scaling from a rough MVP to a unicorn, without adding operational noise or artificial delays to the founder&apos;s daily workflow.
                 </p>
               </div>
             </div>

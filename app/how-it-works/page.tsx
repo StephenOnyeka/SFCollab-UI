@@ -1,7 +1,6 @@
 import React from "react";
 import ProcessFlow from "@/components/ProcessFlow";
 import ProcessDetails from "@/components/ProcessDetails";
-import Footer from "@/components/Footer";
 import Image from "next/image";
 
 export default function HowItWorksPage() {

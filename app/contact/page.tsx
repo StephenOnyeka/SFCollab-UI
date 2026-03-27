@@ -35,7 +35,7 @@ export default function ContactPage() {
             <div className="flex flex-col md:flex-row justify-between gap-8">
               <div className="flex flex-col gap-6 max-w-lg">
                 <p className="text-base text-gray-500 leading-relaxed">
-                  We’d love to hear about your challenges. Whether you’re looking to revamp your brand, boost performance, or launch something entirely new we’re here to help make it happen.
+                  We&apos;d love to hear about your challenges. Whether you&apos;re looking to revamp your brand, boost performance, or launch something entirely new we&apos;re here to help make it happen.
                 </p>
                 <Button variant="primary" className="w-fit">
                   Get our Help
@@ -62,7 +62,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex gap-4 ">
                     <input type="checkbox" id="terms" className="border border-gray-200 rounded-xl px-6" />
-                    <label htmlFor="terms" className="">I agree to the terms of SF's privacy policy</label>                    
+                    <label htmlFor="terms" className="">I agree to the terms of SF&apos;s privacy policy</label>                    
                   </div>
                   <Button variant="dark" className="w-fit">
                     Send Message

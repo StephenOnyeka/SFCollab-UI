@@ -60,7 +60,7 @@ export default function PricingSection() {
             transition={{ delay: 0.1 }}
             className="text-base text-gray-500 leading-relaxed"
           >
-            Choose the plan that fits your ambition. Whether you're just starting out or ready to scale, we have you covered.
+            Choose the plan that fits your ambition. Whether you&apos;re just starting out or ready to scale, we have you covered.
           </motion.p>
         </div>
 

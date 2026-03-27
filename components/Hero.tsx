@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import { MdPlayArrow, MdFiberManualRecord } from "react-icons/md";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -52,7 +53,9 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center gap-4">
             <Button variant="primary">Get Started</Button>
+            <Link href="/waitlist">
             <Button variant="outline" className="border border-black" >Join waitlist</Button>
+            </Link>
           </div>
 
           {/* Feature Pillars - Infinite Scroll */}

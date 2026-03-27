@@ -6,16 +6,13 @@ import {
   MdVerified, 
   MdMilitaryTech, 
   MdGroups, 
-  MdHistory, 
   MdTrendingUp, 
   MdOutlineSecurity,
   MdAutoGraph
 } from 'react-icons/md';
-import Image from 'next/image';
 
 export default function BuilderReputation() {
   const [score, setScore] = React.useState(0);
-  const isInView = React.useRef(false);
 
   React.useEffect(() => {
     import('framer-motion').then(({ animate }) => {
@@ -55,7 +52,7 @@ export default function BuilderReputation() {
                 Execution builds <span className="italic text-gray-400">reputation.</span>
               </h2>
               <p className="text-base text-gray-500 leading-relaxed">
-                We've replaced social clout with verifiable data. SF profiles represent a history of finished work, peer-reviewed execution, and milestone consistency.
+                We&apos;ve replaced social clout with verifiable data. SF profiles represent a history of finished work, peer-reviewed execution, and milestone consistency.
               </p>
             </div>
             <div className="flex items-center gap-4 bg-gray-50 px-6 py-3 rounded-2xl border border-gray-100">

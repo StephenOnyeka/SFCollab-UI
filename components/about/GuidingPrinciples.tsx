@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import { MdCheckCircle, MdArrowForward } from "react-icons/md";
-import PoweredBy from "../SFEngine";
 
 const contrasts = [
   { old: "Temporary gigs", new: "Long-term collaborations" },

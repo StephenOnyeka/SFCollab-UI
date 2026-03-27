@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MdOutlineNavigateNext, MdOutlineBolt, MdVerifiedUser, MdAutoAwesome } from 'react-icons/md';
+import { MdVerifiedUser, MdAutoAwesome } from 'react-icons/md';
 import Button from './Button';
 
 export default function FinalCTA() {
