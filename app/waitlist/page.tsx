@@ -23,8 +23,8 @@ export default function WaitlistPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="py-1.5 border-b border-gray-400 text-[#6E00CC] text-xs tracking-widest uppercase mb-6 inline-block">
-              Limited Access
+            <span className="text-[#6E00CC] font-normal tracking-[0.2em] uppercase text-sm border-b-2 border-[#6E00CC]/20 pb-1 w-fit">
+              Core Engine
             </span>
             <h1 className="text-[42px] md:text-[60px] font-normal text-[#1A1A1A] leading-tight tracking-tighter max-w-4xl py-4">
               The Startup <br />

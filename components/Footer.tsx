@@ -14,7 +14,6 @@ const Footer = () => {
       { name: "Platform", href: "/about" },
       { name: "How it works", href: "/how-it-works" },
       { name: "Features", href: "/features" },
-      // { name: "Contact", href: "/projects" },
       { name: "Help & Support", href: "/contact" },
     ],
     utilityPages: [

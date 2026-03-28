@@ -23,21 +23,7 @@ export default function AboutHero() {
               Create a Startup
             </Button> */}
           </div>
-          {/* </div> */}
-        </div>      
-        {/* <motion.h1
-          // className="text-[44px] sm:text-[56px] lg:text-[72px] font-inter text-[#1A1A1A] leading-tight tracking-tighter max-w-4xl py-10 mt-10"
-          className="text-[42px] md:text-[60px] text-center text-[#1A1A1A] leading-tight tracking-tighter max-w-4xl py-10 mt-10"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          Where Builders Create <br className="hidden sm:block" />
-          <span className="text-transparent bg-clip-text bg-linear-to-r from-[#1A1A1A] via-[#1A1A1A] to-[#6E00CC]">
-            Real Products
-          </span>{" "}
-          Together
-        </motion.h1> */}  
+        </div>
       </div>
       <div className="relative aspect-8/4 w-4xl rounded-4xl overflow-hidden shadow-2xl mx-auto ">
         <Image

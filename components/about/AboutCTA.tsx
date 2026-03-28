@@ -60,7 +60,7 @@ export function AboutCTA2() {
     <section className="w-full bg-[#0A0A0A] border-y border-gray-100 relative overflow-hidden h-fit">
       {/* Background patterns */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none select-none">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#6E00CC_1px,transparent_1px)] [background-size:40px_40px]" />
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#6E00CC_1px,transparent_1px)] bg-size-[40px_40px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -106,7 +106,7 @@ export function AboutCTA2() {
             </div>
           </div>
 
-          <div className="relative aspect-[4/6] w-full rounded-[2.5rem] h-screen overflow-hidden mx-auto ">
+          <div className="relative aspect-4/6 w-full rounded-[2.5rem] h-screen overflow-hidden mx-auto ">
             {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#6E00CC]/20 blur-[120px] rounded-full pointer-events-none" /> */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[800px] bg-[#6E00CC]/20 blur-[120px] rounded-full pointer-events-none" />
             <Image
