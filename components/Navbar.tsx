@@ -109,7 +109,6 @@ export default function Navbar() {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            // className="fixed inset-0 bg-white z-40 flex flex-col px-6 pt-28 pb-8 h-screen overflow-y-auto"
             className="fixed inset-0 bg-white z-40 flex flex-col px-6 pt-28 pb-8 h-[calc(80vh)] overflow-y-auto"
             // className="fixed inset-0 bg-white z-40 flex flex-col px-6 pt-28 pb-8 h-[calc(100vh-100px)] overflow-y-auto"
           >
