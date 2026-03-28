@@ -1,13 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
+import InteractiveFeatures from "./InteractiveFeatures";
 
 export default function FeaturesHero() {
   return (
     <section className="relative w-full max-w-7xl mx-auto">
-       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#6E00CC]/5 blur-[120px] rounded-full pointer-events-none" />
-       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#1A1A1A]/5 blur-[100px] rounded-full pointer-events-none" />
+       {/* <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#6E00CC]/5 blur-[120px] rounded-full pointer-events-none" />
+       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#1A1A1A]/5 blur-[100px] rounded-full pointer-events-none" /> */}
         <div className="px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8 min-w-full py-10">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 min-w-full pt-10">
           <div className="flex flex-col gap-6 text-left w-xl ">
             <span className="text-[#6E00CC] font-normal tracking-[0.2em] uppercase text-sm border-b-2 border-[#6E00CC]/20 pb-1 w-fit">
               Core Engine
@@ -28,6 +29,7 @@ export default function FeaturesHero() {
         </div>
       </div>
       {/* </div> */}
+      <InteractiveFeatures />
     </section>
   );
 }

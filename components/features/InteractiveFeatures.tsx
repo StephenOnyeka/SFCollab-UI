@@ -102,7 +102,8 @@ export default function InteractiveFeatures() {
 
   return (
     // <section className="w-full bg-[#FAFAFA] py-20 lg:py-32 border-t border-gray-100">
-    <section className="w-full bg-[#FAFAFA] border-t border-gray-100">
+    // <section className="w-full bg-[#FAFAFA] border-t border-gray-100">
+    <section className="w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-24">
           {/* <p className="text-lg md:text-xl text-gray-500 leading-relaxed"> */}

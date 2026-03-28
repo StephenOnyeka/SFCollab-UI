@@ -23,9 +23,7 @@ export default function WaitlistForm() {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto p-8 rounded-[2rem] bg-white border border-gray-100 shadow-[0_8px_40px_rgb(0,0,0,0.06)] relative overflow-hidden">
-      {/* Decorative gradient blur in background */}
-      <div className="absolute -top-20 -right-20 w-40 h-40 bg-[#6E00CC]/10 blur-[50px] rounded-full pointer-events-none" />
+    <div className="w-full max-w-md mx-auto relative">
       
       <AnimatePresence mode="wait">
         {status === "success" ? (
@@ -85,7 +83,7 @@ export default function WaitlistForm() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-[#F9F9F9] border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#6E00CC]/20 focus:border-[#6E00CC]/50 transition-all text-[#1A1A1A] placeholder-gray-400 text-xs md:text-sm"
+                  className="w-full px-6 py-4 bg-transparent border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#6E00CC]/20 focus:border-[#6E00CC]/50 transition-all text-[#1A1A1A] placeholder-gray-400 text-xs md:text-sm"
                   placeholder="Jane Doe"
                 />
               </div>
@@ -100,7 +98,7 @@ export default function WaitlistForm() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-[#F9F9F9] border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#6E00CC]/20 focus:border-[#6E00CC]/50 transition-all text-[#1A1A1A] placeholder-gray-400 text-xs md:text-sm"
+                  className="w-full px-6 py-4 bg-transparent border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#6E00CC]/20 focus:border-[#6E00CC]/50 transition-all text-[#1A1A1A] placeholder-gray-400 text-xs md:text-sm"
                   placeholder="jane@startup.com"
                 />
               </div>
@@ -116,7 +114,7 @@ export default function WaitlistForm() {
                       className={`flex items-center justify-center px-4 py-2.5 rounded-xl border cursor-pointer transition-all text-sm font-medium capitalize ${
                         formData.role === role
                           ? "bg-[#6E00CC]/5 border-[#6E00CC] text-[#6E00CC]"
-                          : "bg-white border-gray-200 text-gray-600 hover:bg-gray-50"
+                          : "bg-transparent border-gray-200 text-gray-600 hover:bg-gray-50"
                       }`}
                     >
                       <input
@@ -175,7 +173,6 @@ export default function WaitlistForm() {
     </div>
   );
 }
-
 
 
 // "use client";

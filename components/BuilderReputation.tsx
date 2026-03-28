@@ -38,7 +38,8 @@ export default function BuilderReputation() {
   ];
 
   return (
-    <section className="w-full bg-white py-24 lg:py-32 overflow-hidden border-t border-gray-100">
+    // <section className="w-full bg-white py-24 lg:py-32 overflow-hidden border-t border-gray-100">
+    <section className="w-full bg-white py-24 lg:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-16">
           

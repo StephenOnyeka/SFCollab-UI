@@ -32,7 +32,7 @@ export default function DataCollectionPolicyPage() {
           <span className="text-[#6E00CC] font-medium tracking-[0.2em] uppercase text-xs border-b border-[#6E00CC]/20 pb-1 mb-6 inline-block">
             Internal Documentation / General Audience
           </span>
-          <h1 className="text-4xl md:text-5xl font-normal text-[#1A1A1A] tracking-tighter mb-4">
+          <h1 className="text-4xl md:text-5xl font-normal text-[#1A1A1A] tracking-tighter leading-[1.2] mb-4">
             User Data Collection & Tracking Policy
           </h1>
           <p className="text-gray-500">Internal Developer Documentation standard implemented site-wide.</p>

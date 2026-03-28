@@ -5,9 +5,10 @@ import PricingSection from "@/components/features/PricingSection";
 
 export default function FeaturesPage() {
   return (
-    <main className="min-h-screen bg-[#FAFAFA]">
+    // <main className="min-h-screen bg-[#FAFAFA]">
+    <main className="min-h-screen bg-white">
       <FeaturesHero />
-      <InteractiveFeatures />
+      {/* <InteractiveFeatures /> */}
       <PricingSection />
       {/* <AboutCTA /> */}
     </main>
