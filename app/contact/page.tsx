@@ -6,10 +6,10 @@ import React from "react";
 export default function ContactPage() {
   return (
     <div>
-      {/* <section className="w-full bg-white pt-10 lg:pt-20 overflow-hidden border-t border-gray-100"> */}
       <section className="w-full bg-white pt-10 lg:pt-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 md:gap-8 lg:gap-10">
+            
             {/* Section Header */}
             <div className="flex flex-col md:flex-row justify-between items-center gap-8">
               <div className="flex flex-col gap-6 max-w-2xl">
@@ -21,49 +21,82 @@ export default function ContactPage() {
                   <span className=" text-gray-400">works.</span>
                 </h2>
               </div>
-              {/* <div className="relative aspect-[6/4] w-sm h-sm rounded-2xl overflow-hidden shadow-2xl"> */}
-              <div className="relative aspect-[6/4] w-sm h-sm rounded-2xl overflow-hidden">
-                <Image
-                  src="/images/contact.jpg"
-                  alt="Marketing experts collaborating"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+
+              {/* Image Container - Only this part was changed */}
+              <div className="w-full px-2 sm:px-4 md:px-0">
+                <div className="relative aspect-[6/4] float-none lg:float-right w-full max-w-sm md:max-w-md lg:max-w-sm rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/contact.jpg"
+                    alt="Marketing experts collaborating"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
               </div>
-              {/* </div> */}
             </div>
+
             <div className="flex flex-col md:flex-row justify-between gap-8">
-              <div className="flex flex-col gap-6 max-w-lg">
+              <div className="flex flex-col gap-6 max-w-lg px-4 md:px-0">
                 <p className="text-base text-gray-500 leading-relaxed">
-                  We&apos;d love to hear about your challenges. Whether you&apos;re looking to revamp your brand, boost performance, or launch something entirely new we&apos;re here to help make it happen.
+                  We&apos;d love to hear about your challenges. Whether
+                  you&apos;re looking to revamp your brand, boost performance,
+                  or launch something entirely new we&apos;re here to help make
+                  it happen.
                 </p>
                 <Button variant="primary" className="w-fit">
                   Get our Help
                 </Button>
                 <p className="text-sm text-gray-500 leading-relaxed">
-                  Hate forms? <span className="text-black">sfcollab333@gmail.com
-</span>
+                  Hate forms?{" "}
+                  <span className="text-black">sfcollab333@gmail.com</span>
                 </p>
               </div>
-              {/* <div className="flex items-center gap-4 bg-gray-50 px-6 py-3 rounded-2xl border border-gray-100"> */}
-              <div className="flex items-center gap-4 px-6 py-3 rounded-2xl w-full md:w-2xl ">
-              {/* <div className="flex items-center gap-4 px-6 py-3 rounded-2xl border border-gray-200 w-full md:w-2xl "> */}
-                <form className="relative w-full rounded-xl text-sm space-y-4">
+
+              <div className="flex items-center gap-4 px-6 py-3 rounded-2xl w-full md:w-2xl">
+                <form className="relative w-full rounded-xl text-sm space-y-4 text-gray-500">
                   <div className="flex gap-4 md:gap-6">
-                    <input type="text" placeholder="Name" className="border border-gray-200 rounded-xl px-6 py-4 w-full" />
-                    <input type="email" placeholder="Email" className="border border-gray-200 rounded-xl px-6 py-4 w-full" />                    
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      className="border border-gray-300 rounded-xl px-6 py-4 w-full"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className="border border-gray-300 rounded-xl px-6 py-4 w-full"
+                    />
                   </div>
                   <div className="flex gap-4 md:gap-6">
-                    <input type="number" placeholder="Phone (Optional)" className="border border-gray-200 rounded-xl px-6 py-4 w-full" />
-                    <input type="text" placeholder="How did you hear about SFCollab" className="border border-gray-200 rounded-xl px-6 py-4 w-full" />                    
+                    <input
+                      type="number"
+                      placeholder="Phone (Optional)"
+                      className="border border-gray-300 rounded-xl px-6 py-4 w-full"
+                    />
+                    <input
+                      type="text"
+                      placeholder="How did you hear about SFCollab"
+                      className="border border-gray-300 rounded-xl px-6 py-4 w-full"
+                    />
                   </div>
                   <div className="flex gap-4 md:gap-6 w-full">
-                    <textarea name="message" id="message" rows={10} placeholder="Message" className="border w-full border-gray-200 rounded-xl px-6 py-4"></textarea>                  
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows={10}
+                      placeholder="Message"
+                      className="border w-full border-gray-300 rounded-xl px-6 py-4"
+                    ></textarea>
                   </div>
                   <div className="flex gap-4 ">
-                    <input type="checkbox" id="terms" className="border border-gray-200 rounded-xl px-6" />
-                    <label htmlFor="terms" className="">I agree to the terms of SF&apos;s privacy policy</label>                    
+                    <input
+                      type="checkbox"
+                      id="terms"
+                      className="border border-gray-300 rounded-xl px-6"
+                    />
+                    <label htmlFor="terms" className="">
+                      I agree to the terms of SF&apos;s privacy policy
+                    </label>
                   </div>
                   <Button variant="dark" className="w-fit">
                     Send Message
@@ -75,7 +108,6 @@ export default function ContactPage() {
         </div>
       </section>
       <FAQ />
-      {/* <FinalCTA /> */}
     </div>
   );
 }

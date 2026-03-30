@@ -12,13 +12,11 @@ const steps = [
   {
     number: "02",
     title: "Start with People",
-    // description: "We develop creative, data-informed concepts that fit your objectives and connect naturally with your target audience.",
     description: "With whatever purpose you have, we have people to help you with it. Meet founders, builders, designers, and thinkers — all in one place. No pitching. No pressure. Just collaboration.",
   },
   {
     number: "03",
     title: "Execution",
-    // description: "We turn ideas into a focused marketing plan and craft visuals, content, and assets that communicate your message with clarity.",
     description: "Tasks are clear. Progress is visible. Effort is tracked. You always know what needs to be done, who's doing it, and how value is created",
   },
   {
@@ -38,17 +36,16 @@ const ProcessFlow = () => {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section className="py-24 bg-white" ref={containerRef}>
-      <div className="container mx-auto px-4 md:px-8 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+    <section
+      ref={containerRef}
+      className="relative py-24 bg-white overflow-x-hidden w-screen left-1/2 -translate-x-1/2"
+    >
+      {/* Inner content container - stays nicely padded and centered */}
+      <div className="container mx-auto px-4 sm:px-6 md:px-6 lg:px-8 xl:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-20 xl:gap-24 w-full max-w-full">
           
-          {/* Left Column: Title and Badge */}
+          {/* Left Column: Title and Description */}
           <div className="lg:col-span-5 flex flex-col items-start lg:sticky lg:top-32 h-fit">
-            {/* <div className="flex items-center gap-2 mb-6">
-              <span className="text-black font-bold">✦</span>
-              <span className="text-sm font-bold tracking-widest uppercase text-black">Process</span>
-            </div> */}
-            
             <h2 className="text-3xl md:text-4xl text-gray-900 leading-[1.1] tracking-tight mb-6">
               Our Process Flow
             </h2>
@@ -58,35 +55,34 @@ const ProcessFlow = () => {
             </p>
           </div>
 
-          {/* Right Column: Timeline and Steps */}
-          <div className="lg:col-span-7 relative">
+          {/* Right Column: Timeline */}
+          <div className="lg:col-span-7 relative min-w-0">
             
-            {/* Vertical Line Container */}
-            <div className="absolute left-[23px] top-6 bottom-6 w-[2px] bg-gray-100 hidden md:block">
-              {/* Animated Progress Line */}
+            {/* Vertical Line */}
+            <div className="absolute left-6 md:left-[calc(1.5rem)] top-6 bottom-6 w-[2px] bg-gray-100 hidden md:block">
               <motion.div 
                 style={{ height: lineHeight, scaleY: 1 }}
                 className="w-full bg-[#ff00e5] origin-top"
               />
             </div>
 
-            <div className="space-y-24 relative">
+            <div className="space-y-20 md:space-y-24 relative">
               {steps.map((step, index) => (
-                <div key={index} className="flex gap-8 md:gap-16">
+                <div key={index} className="flex gap-6 md:gap-8 lg:gap-10">
                   
                   {/* Step Number Circle */}
                   <div className="relative z-10 shrink-0">
-                    <div className="w-12 h-12 rounded-full border-2 border-gray-300 bg-white flex items-center justify-center text-base">
+                    <div className="w-12 h-12 rounded-full border-2 border-gray-300 bg-white flex items-center justify-center text-base font-medium">
                       {step.number}
                     </div>
                   </div>
 
                   {/* Step Content */}
-                  <div className="flex flex-col gap-4 pt-2">
+                  <div className="flex-1 flex flex-col gap-3 pt-2 min-w-0">
                     <h3 className="text-2xl text-gray-900">
                       {step.title}
                     </h3>
-                    <p className="text-base text-gray-500 max-w-xl leading-relaxed">
+                    <p className="text-base text-gray-500 leading-relaxed">
                       {step.description}
                     </p>
                   </div>
