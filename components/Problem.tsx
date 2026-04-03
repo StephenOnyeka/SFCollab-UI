@@ -35,7 +35,8 @@ export default function Problem() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex flex-col gap-6 sticky top-32"
+            // className="flex flex-col gap-6 sticky top-32"
+            className="flex flex-col gap-6"
           >
             <span className="text-[#6E00CC] font-normal tracking-[0.2em] uppercase text-sm">
               The Reality
@@ -50,7 +51,8 @@ export default function Problem() {
             
             {/* Visual element: A "Broken" Diagram - INFINITE ANIMATION */}
             {/* <div className="mt-8 relative h-40 w-full overflow-hidden rounded-3xl bg-linear-to-br from-white/5 to-transparent border border-white/10 p-8"> */}
-            <div className="mt-8 relative h-40 w-full overflow-hidden rounded-3xl p-8">
+            <div className="mt-8 relative h-[300px] md:h-72 w-full overflow-hidden rounded-3xl p-4 md:p-8 ">
+            {/* <div className="mt-8 relative h-[300px] md:h-72 w-full overflow-hidden rounded-3xl p-4 md:p-8 bg-white/2 border border-white/5"> */}
                 {/* Background Glow */}
                 <motion.div 
                     animate={{ 
@@ -75,7 +77,7 @@ export default function Problem() {
                     </div>
 
                     {/* Center: The "Broken" Node */}
-                    <div className="relative flex items-center justify-center">
+                    <div className="relative flex items-center justify-center py-8 scale-75 md:scale-100 transition-transform duration-300">
                         <PoweredBy />
                     </div>
 
