@@ -60,7 +60,7 @@ export default function Hero() {
 
           {/* Feature Pillars - Infinite Scroll */}
           {/* flex flex-wrap items-center gap-x-4 gap-y-0 mt-2 */}
-          <div className="max-w-sm overflow-hidden mt-2">
+          <div className="w-full md:max-w-sm overflow-hidden mt-2">
             <motion.div 
               className="flex items-center gap-x-4 whitespace-nowrap"
               animate={{ x: ["-50%", "0%"] }}

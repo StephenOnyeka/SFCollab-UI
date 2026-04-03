@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutHero() {
   return (
-    <section className="relative w-full max-w-7xl mx-auto">
+    <section className="relative w-full max-w-7xl mx-auto ">
       <div className="px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 min-w-full py-10">
           <div className="flex flex-col gap-6 text-left w-xl ">
@@ -25,7 +25,7 @@ export default function AboutHero() {
           </div>
         </div>
       </div>
-      <div className="relative aspect-8/4 w-4xl rounded-4xl overflow-hidden shadow-2xl mx-auto ">
+      <div className="relative aspect-8/4 max-w-4xl rounded-4xl overflow-hidden shadow-2xl mx-auto ">
         <Image
           src="/images/r.jpg"
           alt="Marketing experts collaborating"

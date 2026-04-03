@@ -27,7 +27,7 @@ export default function RootLayout({
       className={`h-full antialiased`}
     >
       {/* <body className="min-h-full flex flex-col bg-white"> */}
-      <body className={`${inter.variable} min-h-full flex flex-col bg-white`}>
+      <body className={`${inter.variable} min-h-full flex flex-col bg-white overflow-x-hidden`}>
         <Navbar />
         <main className="grow">{children}</main>
         <Footer />
