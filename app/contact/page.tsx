@@ -9,7 +9,6 @@ export default function ContactPage() {
       <section className="w-full bg-white pt-10 lg:pt-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 md:gap-8 lg:gap-10">
-            
             {/* Section Header */}
             <div className="flex flex-col md:flex-row justify-between items-center gap-8">
               <div className="flex flex-col gap-6 max-w-2xl">
@@ -55,7 +54,8 @@ export default function ContactPage() {
 
               <div className="flex items-center gap-4 px-6 py-3 rounded-2xl w-full md:w-2xl">
                 <form className="relative w-full rounded-xl text-sm space-y-4 text-gray-500">
-                  <div className="flex gap-4 md:gap-6">
+                  {/* Row 1 */}
+                  <div className="flex flex-col lg:flex-row gap-4 md:gap-6">
                     <input
                       type="text"
                       placeholder="Name"
@@ -67,7 +67,9 @@ export default function ContactPage() {
                       className="border border-gray-300 rounded-xl px-6 py-4 w-full"
                     />
                   </div>
-                  <div className="flex gap-4 md:gap-6">
+
+                  {/* Row 2 */}
+                  <div className="flex flex-col lg:flex-row gap-4 md:gap-6">
                     <input
                       type="number"
                       placeholder="Phone (Optional)"
@@ -79,7 +81,9 @@ export default function ContactPage() {
                       className="border border-gray-300 rounded-xl px-6 py-4 w-full"
                     />
                   </div>
-                  <div className="flex gap-4 md:gap-6 w-full">
+
+                  {/* Message */}
+                  <div className="flex w-full">
                     <textarea
                       name="message"
                       id="message"
@@ -88,16 +92,20 @@ export default function ContactPage() {
                       className="border w-full border-gray-300 rounded-xl px-6 py-4"
                     ></textarea>
                   </div>
-                  <div className="flex gap-4 ">
+
+                  {/* Checkbox */}
+                  <div className="flex gap-4 items-start">
                     <input
                       type="checkbox"
                       id="terms"
-                      className="border border-gray-300 rounded-xl px-6"
+                      className="mt-1 border border-gray-300 rounded"
                     />
-                    <label htmlFor="terms" className="">
+                    <label htmlFor="terms">
                       I agree to the terms of SF&apos;s privacy policy
                     </label>
                   </div>
+
+                  {/* Button */}
                   <Button variant="dark" className="w-fit">
                     Send Message
                   </Button>

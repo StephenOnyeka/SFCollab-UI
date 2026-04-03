@@ -59,7 +59,7 @@ const ProcessFlow = () => {
           <div className="lg:col-span-7 relative min-w-0">
             
             {/* Vertical Line */}
-            <div className="absolute left-6 md:left-[calc(1.5rem)] top-6 bottom-6 w-[2px] bg-gray-100 hidden md:block">
+            <div className="absolute left-6 md:left-[calc(1.5rem)] top-6 bottom-6 w-[2px] bg-gray-100">
               <motion.div 
                 style={{ height: lineHeight, scaleY: 1 }}
                 className="w-full bg-[#ff00e5] origin-top"

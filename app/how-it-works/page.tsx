@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function HowItWorksPage() {
   return (
     <main className="relative w-full max-w-7xl mx-auto">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center bg-white overflow-x-hidden">
         <h2 className="text-[42px] md:text-[60px] font-normal text-center text-gray-600 leading-tight tracking-tighter max-w-4xl py-10 mt-10">
           See How it{" "}
           <span className="bg-clip-text text-transparent bg-linear-to-r from-[#6E00CC] to-[#A855F7]">
