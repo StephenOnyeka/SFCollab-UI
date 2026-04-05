@@ -7,7 +7,7 @@ import { MdArrowBack } from "react-icons/md";
 
 export default function DataCollectionPolicyPage() {
   return (
-    <main className="min-h-screen bg-[#FAFAFA] relative overflow-hidden">
+    <main className="min-h-screen bg-[#FAFAFA] relative overflow-hidden px-5 md:px-0">
       {/* Background Ambience */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#6E00CC]/5 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#1A1A1A]/5 blur-[100px] rounded-full pointer-events-none" />
@@ -30,250 +30,118 @@ export default function DataCollectionPolicyPage() {
           className="mb-16"
         >
           <span className="text-[#6E00CC] font-medium tracking-[0.2em] uppercase text-xs border-b border-[#6E00CC]/20 pb-1 mb-6 inline-block">
-            Internal Documentation / General Audience
+            Data Collection Policy
           </span>
           <h1 className="text-4xl md:text-5xl font-normal text-[#1A1A1A] tracking-tighter leading-[1.2] mb-4">
-            User Data Collection & Tracking Policy
+            How We Collect User Data
           </h1>
-          <p className="text-gray-500">Internal Developer Documentation standard implemented site-wide.</p>
+          <p className="text-gray-500">Last updated: March 31, 2026</p>
         </motion.div>
 
         <motion.article 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="prose prose-gray max-w-none prose-headings:font-medium prose-headings:text-[#1A1A1A] prose-headings:tracking-tight prose-p:text-gray-600 prose-p:leading-relaxed prose-li:text-gray-600 prose-li:leading-relaxed space-y-10"
+          className="prose prose-gray max-w-none prose-headings:font-medium prose-headings:text-[#1A1A1A] prose-headings:tracking-tight prose-p:text-gray-600 prose-p:leading-relaxed prose-li:text-gray-600 prose-li:leading-relaxed space-y-12"
         >
           <section>
-            <h2 className="text-2xl mb-4">Purpose of This Document</h2>
-            <p className="mb-4">This document explains:</p>
-            <ul className="list-disc pl-5 space-y-2 mb-4">
-              <li>What user data we collect across the SF Ecosystem</li>
-              <li>Why we collect it</li>
-              <li>How it should be implemented technically</li>
-              <li>What must be avoided for legal and architectural safety</li>
-            </ul>
-            <p>This applies to SFCollab, SFManagers, and all future SF products.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl mb-4">1. Core Principle (READ THIS FIRST)</h2>
-            <p className="mb-4 font-medium text-[#1A1A1A]">We do not &quot;spy&quot; on users. We observe system interactions to ensure integrity, safety, and intelligence.</p>
-            <p className="mb-4">Data collection exists to:</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Prevent abuse and scams</li>
-              <li>Enforce one-account-per-user</li>
-              <li>Power gamification and reputation</li>
-              <li>Enable AI and future intelligence</li>
-              <li>Protect founders, mentors, and investors</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl mb-4">2. Data Collection Layers (Architecture Overview)</h2>
-            <p className="mb-6">There are 4 layers of data, each with different responsibilities and storage rules.</p>
-
-            <h3 className="text-xl mb-3 text-[#1A1A1A]">2.1 Passive System Data (Automatic)</h3>
-            <p className="mb-2"><strong>What it is:</strong> Data generated automatically when users use the platform.</p>
-            <p className="mb-2"><strong>Examples:</strong></p>
-            <ul className="list-disc pl-5 space-y-2 mb-4">
-              <li>Page views / route changes</li>
-              <li>Feature usage</li>
-              <li>Session duration</li>
-              <li>Errors and crashes</li>
-              <li>Device, browser, OS</li>
-              <li>IP address (coarse location only)</li>
-            </ul>
-            <p className="mb-2"><strong>Implementation:</strong></p>
-            <ul className="list-disc pl-5 space-y-2 mb-4">
-              <li>Frontend analytics events</li>
-              <li>Backend request logs</li>
-              <li>Server / CDN logs</li>
-            </ul>
-            <p className="mb-2"><strong>Rules:</strong></p>
-            <ul className="list-disc pl-5 space-y-2 mb-6 text-red-600">
-              <li>No precise GPS tracking</li>
-              <li>No hidden recording</li>
-              <li>No keystroke logging</li>
-            </ul>
-
-            <h3 className="text-xl mb-3 text-[#1A1A1A]">2.2 Explicit Interaction Events (CORE SF DATA)</h3>
-            <p className="mb-4 font-medium">This is the most important layer.</p>
-            <p className="mb-2"><strong>Examples:</strong></p>
-            <div className="bg-gray-100 p-4 rounded-xl font-mono text-sm text-gray-700 mb-4">
-              idea_submitted, idea_voted, startup_created, startup_joined, team_member_added, mentor_session_started, payment_initiated, investment_committed, escrow_released, account_flagged, account_banned
-            </div>
-            <p className="mb-2"><strong>Why this matters:</strong></p>
-            <ul className="list-disc pl-5 space-y-2 mb-4">
-              <li>Powers reputation & points</li>
-              <li>Enables fraud detection</li>
-              <li>Feeds AI training later</li>
-              <li>Enables investor trust</li>
-            </ul>
-            <p className="mb-2"><strong>Implementation rules:</strong></p>
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>Events must represent state changes</li>
-              <li>Events must be backend-validated</li>
-              <li>Frontend events alone are NOT trusted</li>
-            </ul>
-
-            <h3 className="text-xl mb-3 text-[#1A1A1A]">2.3 Identity & Trust Data (Sensitive, Mostly External)</h3>
-            <p className="mb-2"><strong>What it includes:</strong> KYC / identity verification, Face verification, ID checks, Risk & trust signals</p>
-            <p className="mb-2"><strong>How it works:</strong> Handled by external providers. We receive:</p>
-            <ul className="list-disc pl-5 space-y-2 mb-4">
-              <li>verification status</li>
-              <li>provider reference ID</li>
-              <li>trust level / risk flags</li>
-            </ul>
-            <p className="mb-2"><strong>What we NEVER store:</strong></p>
-            <ul className="list-disc pl-5 space-y-2 mb-4">
-              <li>Raw ID images</li>
-              <li>Full biometric data</li>
-              <li>Government ID numbers (unless legally required)</li>
-            </ul>
-            <p className="mb-6 font-medium text-[#1A1A1A]">Developer rule: Treat identity data as read-only trust signals, not user content.</p>
-
-            <h3 className="text-xl mb-3 text-[#1A1A1A]">2.4 Intelligence & Training Data (Derived)</h3>
-            <p className="mb-2"><strong>What it is:</strong> Aggregated, derived, long-term insights.</p>
-            <p className="mb-2"><strong>Examples:</strong> Contribution patterns, Startup health signals, Fraud heuristics, Reputation trajectories.</p>
-            <p className="mb-2"><strong>Implementation:</strong></p>
-            <ul className="list-disc pl-5 space-y-2 mb-4">
-              <li>Built from event data</li>
-              <li>Aggregated / anonymized where possible</li>
-              <li>Stored separately from raw events</li>
-            </ul>
-            <p>Not required in MVP: But raw data must be clean from day one.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl mb-4">3. Event Design Guidelines (VERY IMPORTANT)</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-green-50 p-6 rounded-2xl border border-green-100">
-                <h3 className="text-lg font-medium text-green-800 mb-4 flex items-center gap-2">✅ DO</h3>
-                <ul className="list-disc pl-5 space-y-2 text-green-700">
-                  <li>Track meaningful actions</li>
-                  <li>Use consistent event naming</li>
-                  <li>Include timestamps</li>
-                  <li>Include actor (user_id)</li>
-                  <li>Include context (startup_id, team_id)</li>
-                  <li>Log enforcement actions</li>
-                </ul>
-              </div>
-              <div className="bg-red-50 p-6 rounded-2xl border border-red-100">
-                <h3 className="text-lg font-medium text-red-800 mb-4 flex items-center gap-2">❌ DO NOT</h3>
-                <ul className="list-disc pl-5 space-y-2 text-red-700">
-                  <li>Track raw text unnecessarily</li>
-                  <li>Track private content outside context</li>
-                  <li>Track sensitive personal data</li>
-                  <li>Rely only on frontend events</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-2xl mb-4">4. Required Core Event Fields (Standard)</h2>
-            <p className="mb-4">Every event should include:</p>
-            <pre className="bg-[#1A1A1A] text-gray-300 p-6 rounded-2xl text-sm overflow-x-auto shadow-xl">
-{`{
-  "event_name": "startup_joined",
-  "user_id": "uuid",
-  "context": { "startup_id": "uuid", "role": "member" },
-  "timestamp": "ISO-8601",
-  "source": "backend",
-  "ip_hash": "hashed",
-  "device_fingerprint": "hashed"
-}`}
-            </pre>
-            <p className="mt-4 font-medium text-[#1A1A1A]">Hash identifiers where possible. Never store raw fingerprints in plain text.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl mb-4">5. Enforcement & Audit Logging</h2>
-            <p className="mb-2"><strong>What must be logged:</strong> Warnings, Restrictions, Bans, Payment disputes, Escrow actions.</p>
-            <p className="mb-2"><strong>Why:</strong> Legal defensibility, Abuse prevention, Appeal review (if allowed), Pattern detection.</p>
-            <p className="mb-4 font-medium text-[#1A1A1A]">Rule: No silent enforcement. Everything must be auditable.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl mb-4">6. Payments, Escrow & Investments</h2>
-            <p className="mb-2"><strong>What to track:</strong> Initiation, Status changes, Milestones, Deadlines, Releases, Failures.</p>
-            <p className="mb-2"><strong>What NOT to track:</strong> Full card numbers, Wallet private keys, Sensitive payment credentials.</p>
-            <p className="font-medium text-[#1A1A1A]">Payments are metadata + references, never raw secrets.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl mb-4">7. AI Training Considerations (Future-Safe)</h2>
-            <p className="mb-2"><strong>What AI can use:</strong> Aggregated events, Anonymized patterns, System metadata, Content where permitted by policy.</p>
-            <p className="mb-2"><strong>What AI must NOT use:</strong> Raw identity documents, Private credentials, Sensitive personal data.</p>
-            <p className="mb-2"><strong>Developer responsibility:</strong> Design systems so:</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Raw data can be separated</li>
-              <li>Training datasets can be filtered</li>
-              <li>Deletion requests can be respected where required</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl mb-4">8. Privacy & Compliance Rules (NON-NEGOTIABLE)</h2>
-            <ul className="list-disc pl-5 space-y-2 mb-4 bg-gray-100 p-6 rounded-2xl text-[#1A1A1A]">
-              <li>No sensitive data unless explicitly required</li>
-              <li>External providers for KYC</li>
-              <li>Lawful basis for all processing</li>
-              <li>Data minimization by default</li>
-              <li>Retain abuse-related data even after bans</li>
-            </ul>
-            <p className="font-medium text-[#6E00CC]">If unsure → ask before implementing.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl mb-4">9. What We Are Building (Mental Model)</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
-              <div className="bg-[#6E00CC]/5 p-6 rounded-2xl border border-[#6E00CC]/10">
-                <h3 className="text-lg font-medium text-[#6E00CC] mb-4">We are building:</h3>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>An observable ecosystem</li>
-                  <li>A trust-based platform</li>
-                  <li>An AI-ready data foundation</li>
-                </ul>
-              </div>
-              <div className="bg-red-50 p-6 rounded-2xl border border-red-100">
-                <h3 className="text-lg font-medium text-red-800 mb-4">We are NOT building:</h3>
-                <ul className="list-disc pl-5 space-y-2 text-red-700">
-                  <li>Surveillance software</li>
-                  <li>Ad tracking systems</li>
-                  <li>Behavioral manipulation engines</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-2xl mb-4">10. Final Developer Checklist</h2>
-            <p className="mb-4">Before shipping a feature:</p>
-            <ul className="list-none space-y-3 mb-4">
-              <li className="flex items-center gap-3"><span className="w-6 h-6 rounded border-2 border-gray-300"></span> Events defined?</li>
-              <li className="flex items-center gap-3"><span className="w-6 h-6 rounded border-2 border-gray-300"></span> Backend validation?</li>
-              <li className="flex items-center gap-3"><span className="w-6 h-6 rounded border-2 border-gray-300"></span> No sensitive data leaked?</li>
-              <li className="flex items-center gap-3"><span className="w-6 h-6 rounded border-2 border-gray-300"></span> Audit trail present?</li>
-              <li className="flex items-center gap-3"><span className="w-6 h-6 rounded border-2 border-gray-300"></span> Abuse vectors considered?</li>
-              <li className="flex items-center gap-3"><span className="w-6 h-6 rounded border-2 border-gray-300"></span> Future AI compatibility ensured?</li>
-            </ul>
-            <p className="font-medium text-red-600">If any box is unchecked → do not ship.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl mt-8 mb-4">Final Note to Developers</h2>
-            <p className="mb-4">SF&apos;s strength comes from:</p>
-            <ul className="list-disc pl-5 space-y-2 mb-6">
-              <li>Clean data</li>
-              <li>Clear intent</li>
-              <li>Strong enforcement</li>
-              <li>Respect for users who build honestly</li>
-            </ul>
-            <p className="font-medium text-xl text-[#1A1A1A] p-6 bg-gradient-to-r from-[#6E00CC]/10 to-[#A855F7]/10 rounded-2xl text-center shadow-inner">
-              If we get data right now, everything else becomes easier later.
+            <h2 className="text-2xl mb-6 text-[#1A1A1A]">Our Approach to Data Collection</h2>
+            <p className="mb-6 text-gray-600">
+              We do not spy on users. We collect data by observing how people interact with the SF platform to ensure safety, prevent abuse, maintain trust, and build a better ecosystem for everyone.
             </p>
+            <p className="text-gray-600">
+              This Data Collection Policy explains the types of data we collect across the SF Ecosystem (including SFCollab, SFManagers, and future products), why we collect it, and the principles that guide our approach.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl mb-6 text-[#1A1A1A]">1. Types of Data We Collect</h2>
+            
+            <h3 className="text-xl text-[#1A1A1A] mb-4">Platform Usage Data</h3>
+            <p className="mb-6 text-gray-600">
+              Automatically collected technical information when you use the platform, including page views, route changes, feature usage, session duration, errors, device type, browser, operating system, and a coarse approximation of location from your IP address.
+            </p>
+
+            <h3 className="text-xl text-[#1A1A1A] mb-4">Interaction and Activity Data</h3>
+            <p className="mb-6 text-gray-600">
+              Records of meaningful actions you take on the platform, such as submitting ideas, voting, creating or joining startups, participating in mentorship sessions, making payments or commitments, and other key activities that affect the ecosystem.
+            </p>
+
+            <h3 className="text-xl text-[#1A1A1A] mb-4">Identity and Trust Signals</h3>
+            <p className="mb-6 text-gray-600">
+              Information received from external verification services for identity checks and trust assessment. This includes verification status and basic trust signals. We do not collect or store raw identification documents or full biometric data.
+            </p>
+
+            <h3 className="text-xl text-[#1A1A1A] mb-4">Derived and Aggregated Data</h3>
+            <p className="text-gray-600">
+              Insights and patterns created from the data above, such as contribution trends, reputation signals, and platform health indicators. These help improve fairness and intelligence in the ecosystem.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl mb-6 text-[#1A1A1A]">2. Why We Collect This Data</h2>
+            <ul className="list-disc pl-5 space-y-4 text-gray-600">
+              <li>To prevent abuse, scams, and unfair activity</li>
+              <li>To support one-account-per-person integrity</li>
+              <li>To power reputation systems, gamification, and community trust</li>
+              <li>To protect founders, mentors, investors, and honest participants</li>
+              <li>To understand platform usage and make improvements</li>
+              <li>To build a responsible foundation for future AI-powered features that benefit the community</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl mb-6 text-[#1A1A1A]">3. How We Collect Data</h2>
+            <p className="mb-6 text-gray-600">
+              Usage data is collected automatically through system logs and analytics events. Important interactions are validated on our servers for accuracy and reliability. We use hashing techniques for certain identifiers to enhance privacy.
+            </p>
+            <p className="text-gray-600">
+              We follow data minimization — collecting only what is necessary for the purposes above. Raw sensitive data is avoided wherever possible, and different types of data are handled with appropriate separation.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl mb-6 text-[#1A1A1A]">4. Our Data Collection Principles</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-[#6E00CC]/5 p-8 rounded-2xl border border-[#6E00CC]/10">
+                <h3 className="text-lg font-medium text-[#6E00CC] mb-5">We collect data to build</h3>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-start gap-3">• An observable and transparent ecosystem</li>
+                  <li className="flex items-start gap-3">• A platform rooted in trust and accountability</li>
+                  <li className="flex items-start gap-3">• A clean, responsible foundation for future intelligence</li>
+                </ul>
+              </div>
+              <div className="bg-gray-100 p-8 rounded-2xl">
+                <h3 className="text-lg font-medium text-[#1A1A1A] mb-5">We do not collect data for</h3>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-start gap-3">• Surveillance or hidden monitoring</li>
+                  <li className="flex items-start gap-3">• Advertising or behavioral manipulation</li>
+                  <li className="flex items-start gap-3">• Unnecessary tracking of private content</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl mb-6 text-[#1A1A1A]">5. Key Guidelines for Data Collection</h2>
+            <p className="mb-6 text-gray-600">
+              We only collect data that serves a clear and legitimate purpose. All significant activity events are designed to represent real state changes and are validated where possible. We avoid collecting precise location data, keystrokes, or hidden recordings.
+            </p>
+            <p className="text-gray-600">
+              Our systems are designed so that data remains clean, auditable, and suitable for safe long-term use, including responsible future AI applications.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl mb-6 text-[#1A1A1A]">Final Note</h2>
+            <p className="text-gray-600 mb-8">
+              Getting data collection right helps us create a fair, safe, and intelligent platform that rewards honest participation.
+            </p>
+            <div className="p-8 bg-gradient-to-r from-[#6E00CC]/5 to-[#A855F7]/5 rounded-2xl text-center">
+              <p className="font-medium text-[#1A1A1A]">
+                If we collect the right data thoughtfully from the beginning, everything else in the ecosystem becomes stronger and more trustworthy over time.
+              </p>
+            </div>
           </section>
 
         </motion.article>

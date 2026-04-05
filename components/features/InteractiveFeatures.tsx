@@ -114,7 +114,7 @@ export default function InteractiveFeatures() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Side - Dynamic Image */}
-          <div className="relative aspect-4/3 lg:aspect-square w-full rounded-4xl overflow-hidden shadow-2xl bg-gray-100 hidden md:block">
+          <div className="relative aspect-4/3 lg:aspect-square w-full rounded-4xl overflow-hidden shadow-2xl bg-gray-100">
             <AnimatePresence mode="wait">
               <motion.img
                 key={activeIndex}
