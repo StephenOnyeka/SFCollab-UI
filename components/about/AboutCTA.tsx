@@ -10,7 +10,7 @@ export default function AboutCTA() {
       {/* Background Glow */}
       {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#6E00CC]/20 blur-[120px] rounded-full pointer-events-none" /> */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative bg-[#1A1A1A] rounded-[4rem] p-8 md:p-16 overflow-hidden text-center flex flex-col items-center gap-12">
+        <div className="relative bg-[#1A1A1A] rounded-[2rem] md:rounded-[4rem] py-8 px-4 md:p-16 overflow-hidden text-center flex flex-col items-center gap-12">
           {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#6E00CC]/20 blur-[120px] rounded-full pointer-events-none" /> */}
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center relative z-10">
             <motion.h2
@@ -18,7 +18,8 @@ export default function AboutCTA() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               // className="text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight mb-8"
-              className="text-[48px] md:text-[60px] text-white tracking-[calc(-0.04em)] mb-8 leading-tight"
+              // className="text-[48px] md:text-[60px] text-white tracking-[calc(-0.04em)] mb-8 leading-tight"
+              className="text-4xl md:text-[60px] text-white tracking-[calc(-0.04em)] mb-8 leading-tight"
             >
               The world has enough talkers. <br className="hidden sm:block" />
               It needs 
