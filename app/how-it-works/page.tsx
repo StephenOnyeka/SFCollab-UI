@@ -14,7 +14,7 @@ export default function HowItWorksPage() {
           </span>
         </h2>
         <div className="px-6 lg:px-8 w-full">
-          <div className="relative w-full max-w-5xl mx-auto aspect-[2/1] rounded-[2.5rem] overflow-hidden shadow-2xl">
+          <div className="relative w-full max-w-5xl mx-auto aspect-[2/1] rounded-3xl overflow-hidden shadow-2xl">
             <Image
               src="/images/o.jpg"
               alt="Marketing experts collaborating"

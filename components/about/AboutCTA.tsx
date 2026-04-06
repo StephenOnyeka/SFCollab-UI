@@ -106,9 +106,10 @@ export function AboutCTA2() {
             </div>
           </div>
 
-          <div className="relative aspect-4/6 w-full rounded-[2.5rem] h-screen overflow-hidden mx-auto ">
+          {/* <div className="relative aspect-4/6 w-full rounded-[2.5rem] h-screen overflow-hidden mx-auto "> */}
+          <div className="relative aspect-4/6 w-full rounded-[2.5rem] h-[50vh] md:h-screen overflow-hidden mx-auto ">
             {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#6E00CC]/20 blur-[120px] rounded-full pointer-events-none" /> */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[800px] bg-[#6E00CC]/20 blur-[120px] rounded-full pointer-events-none" />
+            {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[800px] bg-[#6E00CC]/20 blur-[120px] rounded-full pointer-events-none" /> */}
             <Image
               src="/images/phone.png"
               alt="Marketing experts collaborating"
