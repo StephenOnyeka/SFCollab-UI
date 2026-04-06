@@ -8,7 +8,7 @@ import { AboutCTA2 } from '@/components/about/AboutCTA';
 
 export default function About() {
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden">
+    <div className="flex flex-col min-h-screen">
       <AboutHero />
       <MissionSection />
       {/* <GuidingPrinciples /> */}

@@ -69,7 +69,7 @@ export function AboutCTA2() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
           <div className="flex flex-col gap-8">
-            <h2 className="text-[42px] md:text-[56px] mt-8 md:mt-8 lg:mt-0 font-normal leading-[1.1] tracking-tighter text-white">
+            <h2 className="text-[42px] md:text-[56px] font-normal leading-[1.1] tracking-tighter text-white">
               The ecosystem is <br />{" "}
               <span className="text-white/40 italic">already forming.</span>
             </h2>
