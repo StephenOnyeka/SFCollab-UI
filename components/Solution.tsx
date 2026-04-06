@@ -43,7 +43,8 @@ export default function Solution() {
           <span className="text-[#6E00CC] font-normal tracking-[0.2em] uppercase text-sm border-b-2 border-[#6E00CC]/20 pb-1">
             The Solution
           </span>
-            <h2 className="text-[42px] md:text-[60px] font-normal text-[#1A1A1A] leading-tight tracking-tighter max-w-4xl">
+            {/* <h2 className="text-[42px] md:text-[60px] font-normal text-[#1A1A1A] leading-tight tracking-tighter max-w-4xl"> */}
+            <h2 className="text-4xl md:text-6xl font-normal text-[#1A1A1A] leading-tight tracking-tighter max-w-4xl">
               The first integrated environment for <span className="bg-clip-text text-transparent bg-linear-to-r from-[#6E00CC] to-[#A855F7]">venture formation.</span>
             </h2>
             <p className="text-lg text-gray-500 max-w-2xl leading-relaxed">

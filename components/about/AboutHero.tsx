@@ -33,7 +33,7 @@ export default function AboutHero() {
 
   {/* IMAGE */}
   <div className="px-6 lg:px-8">
-    <div className="relative aspect-[8/4] w-full rounded-3xl overflow-hidden shadow-2xl">
+    <div className="relative aspect-8/4 max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
       <Image
         src="/images/r.jpg"
         alt="Marketing experts collaborating"
@@ -45,7 +45,7 @@ export default function AboutHero() {
   </div>
 
 </section>
-  );
+);
 }
 
 
